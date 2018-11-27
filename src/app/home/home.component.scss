@@ -11,12 +11,20 @@
     background-repeat: no-repeat;
     background-size: cover;
 
-    padding-top: 10em;
+    padding-top: 1.5em;
 }
 
 .title, .description {
     text-align: center;
     margin: auto;
+}
+
+.logo {
+    position: absolute;
+    right: 0px;
+    width: 175px;
+    margin-top: 48em;
+    text-align: right;
 }
 
 .title {

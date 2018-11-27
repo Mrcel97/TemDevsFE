@@ -1,3 +1,16 @@
 .logo {
     width: 6em;
 }
+
+.nav-link {
+    rotate: 0deg !important;
+}
+
+.animated {
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+    transition: width 2s, height 2s, transform 2s;
+}
+
+.animated:hover {
+    background-color: #64415c;
+}
