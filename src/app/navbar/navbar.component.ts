@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { DiscordAuthService } from '../services/discord-auth.service';
 
 @Component({
   selector: 'app-navbar',
@@ -8,27 +9,17 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
+  
+  public discordAuthUrl: string;
 
-  constructor(private route: Router, private http: HttpClient) { }
+  constructor(private http: HttpClient, 
+    private discordAuth: DiscordAuthService) { 
+    
+    this.discordAuthUrl = this.discordAuth.generateDiscordAuthUrl();
+  }
 
   ngOnInit() {
-    let token = this.getAccessTokenFromUrl(location.href);
-    this.http.get("https://discordapp.com/api/users/@me", this.getAuthHeaders(token)).subscribe(
-      res => console.log(res)
-    );
+    if (this.discordAuth.tokenFromUrl(location.href))
+      this.discordAuth.getUser().subscribe(console.log);
   }
-
-  private getAccessTokenFromUrl(url: string) {
-    const regexp = new RegExp(/(#|\&)([^=]+)\=([^&]+)/g);
-    const results = regexp.exec(url);
-    return results[3];
-  }
-
-  private getAuthHeaders(token) {
-    const httpOptions = {
-      headers: new HttpHeaders().set("Authorization", "Bearer " + token)
-    };
-    return httpOptions;
-  }
-
 }
