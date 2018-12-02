@@ -5,13 +5,13 @@
   <links>
     <ul class="navbar-nav ml-auto">
       <li class="nav-item active animated">
-        <a class="nav-link waves-light" mdbWavesEffect>Home <span class="sr-only">(current)</span></a>
+        <a routerLink="/" class="nav-link waves-light" mdbWavesEffect>Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item animated">
-        <a class="nav-link waves-light" mdbWavesEffect>Features</a>
+        <a routerLink="/selector" class="nav-link waves-light" mdbWavesEffect>Tools</a>
       </li>
-      <li class="nav-item animated">
-          <a class="nav-link waves-light" mdbWavesEffect>Pricing</a>
+      <li>
+        <a class="nav-link waves-light" mdbWavesEffect href="https://discordapp.com/oauth2/authorize?client_id=518762893039370243&redirect_uri=http://localhost:4200&response_type=token&scope=identify%20email">Discord login</a>
       </li>
       <li class="nav-item dropdown btn-group animated" dropdown>
           <a dropdownToggle type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>

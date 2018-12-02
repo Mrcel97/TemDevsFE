@@ -3,7 +3,7 @@
     background-image: url("../../assets/home_bg.png");
 
     /* Set a specific height */
-    height: 55em;
+    height: 87vh;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -44,6 +44,7 @@
 
 .row {
     background-color: #372d4a;
+    min-height: 100vh;
 }
 
 .card {
@@ -83,10 +84,22 @@
     border-image-slice: 100% 0 0 0;
 }
 
-.content {
-    margin-top: 5em auto;
+.image-content {
+    margin: 110px auto;
+    display: block !important;
 }
 
-.image-content {
-    margin: 2.5em auto;
+.icon {
+    width: 3vw;
+    margin: 90vh auto auto auto;
+}
+
+.parallax > .row {
+    max-width: 99.9vw;
+    margin: auto;
+    background-color: transparent;
+}
+
+.small-size {
+    max-width: 95vw !important;
 }
