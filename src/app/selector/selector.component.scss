@@ -26,6 +26,7 @@
 }
 
 .card {
+    display: block !important;
     max-width: 25em;
     transition: background-color 0.25s linear;
 }
@@ -69,12 +70,14 @@
 
 .card-icon {
     width: 50%;
+    height: 50%;
     margin-top: 1.5em;
     margin-bottom: .25em;
 }
 
 .card-icon-sm {
     width: 43%;
+    height: 43%;
     margin-top: 2em;
     margin-bottom: .25em;
 }
