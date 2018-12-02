@@ -4,9 +4,11 @@ import { Routes, RouterModule } from '@angular/router';
 
 // Components
 import { HomeComponent } from './home/home.component';
+import { SelectorComponent } from './selector/selector.component';
 
 const routes: Routes = [
-  {path: '', component: HomeComponent}
+  {path: '', component: HomeComponent},
+  {path: 'selector', component: SelectorComponent}
 ];
 
 @NgModule({

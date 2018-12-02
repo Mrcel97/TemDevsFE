@@ -4,11 +4,14 @@ import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { AppRoutingModule } from './app-routing.module';
 import { NavbarModule, WavesModule, ButtonsModule } from 'angular-bootstrap-md'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 // Website-Components
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { SelectorComponent } from './selector/selector.component';
 
 
 
@@ -16,7 +19,8 @@ import { NavbarComponent } from './navbar/navbar.component';
   declarations: [
     AppComponent,
     HomeComponent,
-    NavbarComponent
+    NavbarComponent,
+    SelectorComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +28,9 @@ import { NavbarComponent } from './navbar/navbar.component';
     MDBBootstrapModule.forRoot(),
     NavbarModule,
     WavesModule,
-    ButtonsModule
+    ButtonsModule,
+    BrowserAnimationsModule,
+    MatGridListModule
   ],
   schemas: [ NO_ERRORS_SCHEMA ],
   providers: [],
