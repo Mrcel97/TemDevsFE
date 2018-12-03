@@ -1,18 +1,19 @@
 // General scss:
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "theme.scss";
 
 body {
-    margin: 0;
-    height: 100vh;
+  margin: 0;
+  height: 100vh;
 }
 
 // specific scss:
 .indigo {
-    background-color: transparent;
-    background-image:  linear-gradient(rgb(82, 43, 74)90%, #965e7b, #876e8f 10%, rgb(82, 43, 74)90%, #876e8f, #965e7b);
+  background-color: transparent;
+  background-image:  $indigo-gradien;
 }
 
 .container-outside {
-    margin: 0;
-    max-width: 100%;
+  margin: 0;
+  max-width: 100%;
 }

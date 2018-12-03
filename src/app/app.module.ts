@@ -13,13 +13,15 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SelectorComponent } from './selector/selector.component';
+import { TempediaComponent } from './tempedia/tempedia.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     NavbarComponent,
-    SelectorComponent
+    SelectorComponent,
+    TempediaComponent
   ],
   imports: [
     BrowserModule,
