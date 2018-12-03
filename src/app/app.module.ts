@@ -14,6 +14,7 @@ import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SelectorComponent } from './selector/selector.component';
 import { TempediaComponent } from './tempedia/tempedia.component';
+import { TemtemEntryComponent } from './tempedia/temtem-entry/temtem-entry.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { TempediaComponent } from './tempedia/tempedia.component';
     HomeComponent,
     NavbarComponent,
     SelectorComponent,
-    TempediaComponent
+    TempediaComponent,
+    TemtemEntryComponent
   ],
   imports: [
     BrowserModule,

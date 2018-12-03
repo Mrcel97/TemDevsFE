@@ -61,14 +61,6 @@
   border-radius: 0 0 5px 5px;
 }
 
-.card-borderfull {
-  background-color: transparent;
-  border-top: solid transparent 1em;
-  border-image: url(/assets/card_border2.png);
-  border-image-repeat: round;
-  border-image-slice: 100% 0 0 0;
-}
-
 .border-full-front {
   border-top: solid transparent 2em;
   -webkit-border-image: url(/assets/div_border.png) 45 stretch;

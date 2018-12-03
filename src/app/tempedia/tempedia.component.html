@@ -1,3 +1,5 @@
-<p>
-  tempedia works!
-</p>
+<div class="main-container mt-lg-4 p-lg-5 p-3 mt-5">
+  <div class="row">
+    <app-temtem-entry *ngFor="let t of temtems" [temtem]="t" class="col-lg-3 col-sm-12 col-md-4 mb-3"></app-temtem-entry>
+  </div>
+</div>

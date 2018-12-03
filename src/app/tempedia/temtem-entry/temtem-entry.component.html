@@ -1,0 +1,20 @@
+<div class="temtem-card card-borderfull">
+  <div class="card-body p-2">
+    <div class="row">
+      <div class="img-container col-6">
+        <img [src]="'/assets/' + temtem.image_url" alt="">
+      </div>
+      <div class="info col-6">
+        <p class="id">Nº. {{ temtem.id }}</p>
+        <p class="name">{{ temtem.name }}</p>
+        <div class="types-container d-inline-flex">
+          <ul class="d-inline-flex">
+            <li class="list-inline-item" *ngFor="let t of temtem.complexTypes">
+              <img *ngIf="t" [src]="'/assets/' + t.image_url" [alt]="t.name">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
