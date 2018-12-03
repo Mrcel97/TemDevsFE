@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { NavbarModule, WavesModule, ButtonsModule } from 'angular-bootstrap-md'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 // Website-Components
 import { AppComponent } from './app.component';
@@ -15,6 +16,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { SelectorComponent } from './selector/selector.component';
 import { TempediaComponent } from './tempedia/tempedia.component';
 import { TemtemEntryComponent } from './tempedia/temtem-entry/temtem-entry.component';
+import { CarouselComponent } from './tempedia/carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,8 @@ import { TemtemEntryComponent } from './tempedia/temtem-entry/temtem-entry.compo
     NavbarComponent,
     SelectorComponent,
     TempediaComponent,
-    TemtemEntryComponent
+    TemtemEntryComponent,
+    CarouselComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,7 +37,8 @@ import { TemtemEntryComponent } from './tempedia/temtem-entry/temtem-entry.compo
     ButtonsModule,
     BrowserAnimationsModule,
     MatGridListModule,
-    HttpClientModule
+    HttpClientModule,
+    SlickCarouselModule
   ],
   schemas: [ NO_ERRORS_SCHEMA ],
   providers: [],

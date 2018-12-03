@@ -1,5 +1,11 @@
-<div class="main-container mt-lg-4 p-lg-5 p-3 mt-5">
-  <div class="row">
+<div class="parallax">
+  <app-carousel [temtems]="temtems"></app-carousel>
+  <div class="icon-wrapper row d-flex justify-content-center animated bounce">
+    <img src="/assets/icons/two-arrow-down.svg" class="icon" alt="more_content_below">
+  </div>
+</div>
+<div class="container border-full">
+  <div class="row border-full-front">
     <app-temtem-entry *ngFor="let t of temtems" [temtem]="t" class="col-lg-3 col-sm-12 col-md-4 mb-3"></app-temtem-entry>
   </div>
 </div>

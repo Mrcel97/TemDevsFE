@@ -1,0 +1,60 @@
+.parallax {
+  /* The image used */
+  background-image: url("/assets/home_bg.png");
+
+  /* Set a specific height */
+  height: 87vh;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding-top: 1.5em;
+}
+
+.icon {
+  width: 3vw;
+  margin: 90vh auto auto auto;
+}
+
+.icon-wrapper {
+  position: absolute;
+  bottom: 1em;
+  left: 0;
+  right: 0;
+  max-width: 99.9vw;
+  background-color: transparent;
+}
+
+.border-full-front {
+  border-top: solid transparent 2em;
+  -webkit-border-image: url(/assets/div_border.png) 45 stretch;
+  -o-border-image: url(/assets/div_border.png) 45 stretch;
+  border-image: url(/assets/div_border.png) 45 stretch;
+  border-image-repeat: round;
+  border-image-slice: 100% 0 0 0;
+}
+
+.border-full {
+  border-top: solid transparent 1em;
+  -webkit-border-image: url(/assets/div_border.png) 45 stretch;
+  -o-border-image: url(/assets/div_border.png) 45 stretch;
+  border-image: url(/assets/div_border.png) 45 stretch;
+  border-image-repeat: round;
+  border-image-slice: 100% 0 0 0;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0;
+  margin-top: -1em !important;
+
+  .row {
+    padding-top: 5em;
+    background-color: #372d4a;
+    min-height: 100vh;
+  }
+}
+

@@ -13,7 +13,7 @@ export class TempediaComponent implements OnInit {
 
   public temtems: Temtem[] = [];
   public types: Type[] = [];
-
+  
   constructor(private temtemService: TemtemService) { }
 
   ngOnInit() {

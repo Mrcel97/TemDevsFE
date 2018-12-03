@@ -1,0 +1,43 @@
+.dex-card {
+  background-image: url(/assets/dexcard.png);
+  background-size: 100% 100%;
+  border: none !important;
+}
+
+.carousel-container {
+  overflow: hidden;
+  // Center screen middle
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transform: translate(0, -50%);
+
+  .carousel-temtem-item {
+    height: 22em;
+
+    ul {
+      padding: 0;
+      margin: auto;
+    }
+
+    p {
+      font-size: 1.5em;
+      font-weight: 600;
+    }
+
+    .temtem-image {
+      display: block;
+      width: 70%;
+      height: 50%;
+      margin: auto;
+    }
+
+    .types {
+      img {
+        width: 1.5em;
+      }
+    }
+  }
+}
