@@ -1,0 +1,1023 @@
+[
+{
+    "id": "002",
+    "types": [
+        "Digital"
+    ],
+    "name": "Oree",
+    "image_url": "images/002.png",
+    "evolves_to": "Unknown",
+    "evolves_from": null,
+    "techniques": [
+        {
+            "level": "",
+            "technique": "Mechanical Heat"
+        }
+    ]
+},
+{
+    "id": "010",
+    "types": [
+        "Nature"
+    ],
+    "name": "Swali",
+    "image_url": "images/010.png",
+    "evolves_to": "Loali",
+    "evolves_from": null,
+    "techniques": [
+        {
+            "level": "-",
+            "technique": "Shy Shield"
+        },
+        {
+            "level": "-",
+            "technique": "Tenderness"
+        },
+        {
+            "level": "5",
+            "technique": "Urushiol"
+        },
+        {
+            "level": "8",
+            "technique": "Wind Blade"
+        }
+    ]
+},
+{
+    "id": "11",
+    "types": [
+        "Nature",
+        "Wind"
+    ],
+    "name": "Loali",
+    "image_url": "images/11.png",
+    "evolves_to": null,
+    "evolves_from": "Swali",
+    "techniques": [
+        {
+            "level": "",
+            "technique": ""
+        }
+    ]
+},
+{
+    "id": "12",
+    "types": [
+        "Neutral"
+    ],
+    "name": "Tateru",
+    "image_url": "images/12.png",
+    "evolves_to": null,
+    "evolves_from": null,
+    "techniques": [
+        {
+            "level": "-",
+            "technique": "Tenderness"
+        },
+        {
+            "level": "3",
+            "technique": "Scratch"
+        },
+        {
+            "level": "6",
+            "technique": "Nibble"
+        },
+        {
+            "level": "10",
+            "technique": "Heavy Blow"
+        },
+        {
+            "level": "13",
+            "technique": "Sand Splatter"
+        },
+        {
+            "level": "17",
+            "technique": "Rage"
+        },
+        {
+            "level": "20",
+            "technique": "Fierce Claw"
+        }
+    ]
+},
+{
+    "id": "016",
+    "types": [
+        "Wind"
+    ],
+    "name": "Paharo",
+    "image_url": "images/016.png",
+    "evolves_to": "Paharac",
+    "evolves_from": null,
+    "techniques": [
+        {
+            "level": "-",
+            "technique": "Peck"
+        },
+        {
+            "level": "-",
+            "technique": "Stare"
+        },
+        {
+            "level": "5",
+            "technique": "Hypnosis"
+        },
+        {
+            "level": "7",
+            "technique": "Wind Blade"
+        },
+        {
+            "level": "10",
+            "technique": "Wind Burst"
+        }
+    ]
+},
+{
+    "id": "017",
+    "types": [
+        "Wind"
+    ],
+    "name": "Paharac",
+    "image_url": "images/017.png",
+    "evolves_to": null,
+    "evolves_from": "Paharo",
+    "techniques": [
+        {
+            "level": "-",
+            "technique": "Peck"
+        },
+        {
+            "level": "-",
+            "technique": "Stare"
+        },
+        {
+            "level": "-",
+            "technique": "Hypnosis"
+        },
+        {
+            "level": "-",
+            "technique": "Wind Blade"
+        },
+        {
+            "level": "-",
+            "technique": "Wind Burst"
+        },
+        {
+            "level": "14",
+            "technique": "Cheer Up"
+        },
+        {
+            "level": "19",
+            "technique": "Feather Gatling"
+        }
+    ]
+},
+{
+    "id": "019",
+    "types": [
+        "Electric"
+    ],
+    "name": "Ampling",
+    "image_url": "images/019.png",
+    "evolves_to": "Amphatyr",
+    "evolves_from": null,
+    "techniques": [
+        {
+            "level": "",
+            "technique": ""
+        }
+    ]
+},
+{
+    "id": "20",
+    "types": [
+        "Electric",
+        "Nature"
+    ],
+    "name": "Amphatyr",
+    "image_url": "images/20.png",
+    "evolves_to": null,
+    "evolves_from": "Ampling",
+    "techniques": [
+        {
+            "level": "",
+            "technique": ""
+        }
+    ]
+},
+{
+    "id": "023",
+    "types": [
+        "UnknownType"
+    ],
+    "name": "Hidody",
+    "image_url": "images/023.png",
+    "evolves_to": null,
+    "evolves_from": null,
+    "techniques": [
+        {
+            "level": "",
+            "technique": ""
+        }
+    ]
+},
+{
+    "id": "25",
+    "types": [
+        "Water"
+    ],
+    "name": "Fomu",
+    "image_url": "images/25.png",
+    "evolves_to": "Wiplump",
+    "evolves_from": null,
+    "techniques": [
+        {
+            "level": "",
+            "technique": ""
+        }
+    ]
+},
+{
+    "id": "026",
+    "types": [
+        "Water",
+        "Wind"
+    ],
+    "name": "Wiplump",
+    "image_url": "images/026.png",
+    "evolves_to": null,
+    "evolves_from": "Fomu",
+    "techniques": [
+        {
+            "level": "",
+            "technique": ""
+        }
+    ]
+},
+{
+    "id": "027",
+    "types": [
+        "Neutral"
+    ],
+    "name": "Skail",
+    "image_url": "images/027.png",
+    "evolves_to": "Skunch",
+    "evolves_from": null,
+    "techniques": [
+        {
+            "level": "5",
+            "technique": "Urushiol"
+        }
+    ]
+},
+{
+    "id": "028",
+    "types": [
+        "Neutral",
+        "Melee"
+    ],
+    "name": "Skunch",
+    "image_url": "images/028.png",
+    "evolves_to": null,
+    "evolves_from": "Skail",
+    "techniques": [
+        {
+            "level": "",
+            "technique": ""
+        }
+    ]
+},
+{
+    "id": "032",
+    "types": [
+        "Mental"
+    ],
+    "name": "Houchic",
+    "image_url": "images/032.png",
+    "evolves_to": "Unknown",
+    "evolves_from": null,
+    "techniques": [
+        {
+            "level": "-",
+            "technique": "Kick"
+        },
+        {
+            "level": "-",
+            "technique": "Hypnosis"
+        },
+        {
+            "level": "-",
+            "technique": "Psy +"
+        },
+        {
+            "level": "8",
+            "technique": "Tenderness"
+        },
+        {
+            "level": "13",
+            "technique": "Telekinetic Shrapnel"
+        },
+        {
+            "level": "18",
+            "technique": "Beta Burst"
+        }
+    ]
+},
+{
+    "id": "48",
+    "types": [
+        "Nature"
+    ],
+    "name": "Kaku",
+    "image_url": "images/48.png",
+    "evolves_to": "Saku",
+    "evolves_from": null,
+    "techniques": [
+        {
+            "level": "-",
+            "technique": "Shy Shield"
+        },
+        {
+            "level": "-",
+            "technique": "Toxic Spores"
+        },
+        {
+            "level": "6",
+            "technique": "Nimble"
+        },
+        {
+            "level": "8",
+            "technique": "Urushiol"
+        }
+    ]
+},
+{
+    "id": "049",
+    "types": [
+        "Nature"
+    ],
+    "name": "Saku",
+    "image_url": "images/049.png",
+    "evolves_to": null,
+    "evolves_from": "Kaku",
+    "techniques": [
+        {
+            "level": "-",
+            "technique": "Shy Shield"
+        },
+        {
+            "level": "-",
+            "technique": "Toxic Spores"
+        },
+        {
+            "level": "6",
+            "technique": "Nimble"
+        },
+        {
+            "level": "8",
+            "technique": "Urushiol"
+        },
+        {
+            "level": "11",
+            "technique": "Sharp Leaf"
+        },
+        {
+            "level": "14",
+            "technique": "Wind Burst"
+        },
+        {
+            "level": "18",
+            "technique": "Narcoleptic Hit"
+        }
+    ]
+},
+{
+    "id": "053",
+    "types": [
+        "Mental",
+        "Wind"
+    ],
+    "name": "Barnshe",
+    "image_url": "images/053.png",
+    "evolves_to": "Unknown",
+    "evolves_from": "Unknown",
+    "techniques": [
+        {
+            "level": "-",
+            "technique": "Peck"
+        },
+        {
+            "level": "",
+            "technique": "Wind Burst"
+        },
+        {
+            "level": "-",
+            "technique": "Bamboozle"
+        },
+        {
+            "level": "",
+            "technique": "Intimidation"
+        },
+        {
+            "level": "-",
+            "technique": "Sand Splatter"
+        },
+        {
+            "level": "-",
+            "technique": "Wind Blade"
+        }
+    ]
+},
+{
+    "id": "57",
+    "types": [
+        "UnknownType"
+    ],
+    "name": "Raiber",
+    "image_url": "",
+    "evolves_to": "Raize",
+    "evolves_from": null,
+    "techniques": [
+        {
+            "level": "",
+            "technique": ""
+        }
+    ]
+},
+{
+    "id": "058",
+    "types": [
+        "Fire"
+    ],
+    "name": "Raize",
+    "image_url": "images/058.png",
+    "evolves_to": "Raican",
+    "evolves_from": "Raiber",
+    "techniques": [
+        {
+            "level": "",
+            "technique": ""
+        }
+    ]
+},
+{
+    "id": "059",
+    "types": [
+        "Fire"
+    ],
+    "name": "Raican",
+    "image_url": "images/059.png",
+    "evolves_to": null,
+    "evolves_from": "Raize",
+    "techniques": [
+        {
+            "level": "",
+            "technique": ""
+        }
+    ]
+},
+{
+    "id": "060",
+    "types": [
+        "UnknownType"
+    ],
+    "name": "Pewki",
+    "image_url": "images/060.png",
+    "evolves_to": "Piraniant",
+    "evolves_from": null,
+    "techniques": [
+        {
+            "level": "",
+            "technique": ""
+        }
+    ]
+},
+{
+    "id": "061",
+    "types": [
+        "Water"
+    ],
+    "name": "Piraniant",
+    "image_url": "images/061.png",
+    "evolves_to": null,
+    "evolves_from": "Pewki",
+    "techniques": [
+        {
+            "level": "",
+            "technique": ""
+        }
+    ]
+},
+{
+    "id": "69",
+    "types": [
+        "Water",
+        "Melee"
+    ],
+    "name": "Saipat",
+    "image_url": "images/69.png",
+    "evolves_to": null,
+    "evolves_from": null,
+    "techniques": [
+        {
+            "level": "19",
+            "technique": "Held Anger"
+        },
+        {
+            "level": "16",
+            "technique": "Pressure Wash"
+        },
+        {
+            "level": "-",
+            "technique": "Water Blade"
+        },
+        {
+            "level": "10",
+            "technique": "Stare"
+        },
+        {
+            "level": "-",
+            "technique": "Rage"
+        },
+        {
+            "level": "-",
+            "technique": "Martial Strike"
+        },
+        {
+            "level": "14",
+            "technique": "Venomous Claws"
+        }
+    ]
+},
+{
+    "id": "072",
+    "types": [
+        "Crystal"
+    ],
+    "name": "Crystle",
+    "image_url": "images/072.png",
+    "evolves_to": "Unknown",
+    "evolves_from": null,
+    "techniques": [
+        {
+            "level": "",
+            "technique": "Head Ram"
+        },
+        {
+            "level": "-",
+            "technique": "Nibble"
+        },
+        {
+            "level": "-",
+            "technique": "Mirror Shell"
+        },
+        {
+            "level": "-",
+            "technique": "Glass Blade"
+        },
+        {
+            "level": "",
+            "technique": "Crystal Dust"
+        },
+        {
+            "level": "",
+            "technique": "Crystallize"
+        }
+    ]
+},
+{
+    "id": "079",
+    "types": [
+        "Mental"
+    ],
+    "name": "Hocus",
+    "image_url": "images/079.png",
+    "evolves_to": "Unknown",
+    "evolves_from": null,
+    "techniques": [
+        {
+            "level": "",
+            "technique": ""
+        }
+    ]
+},
+{
+    "id": "082",
+    "types": [
+        "Electric"
+    ],
+    "name": "Sparzy",
+    "image_url": "images/082.png",
+    "evolves_to": null,
+    "evolves_from": null,
+    "techniques": [
+        {
+            "level": "",
+            "technique": ""
+        }
+    ]
+},
+{
+    "id": "086",
+    "types": [
+        "UnknownType"
+    ],
+    "name": "Magmis",
+    "image_url": "images/086.png",
+    "evolves_to": "Mastione",
+    "evolves_from": "Unknown",
+    "techniques": [
+        {
+            "level": "",
+            "technique": ""
+        }
+    ]
+},
+{
+    "id": "087",
+    "types": [
+        "UnknownType"
+    ],
+    "name": "Mastione",
+    "image_url": "images/087.png",
+    "evolves_to": "Unknown",
+    "evolves_from": "Magmis",
+    "techniques": [
+        {
+            "level": "",
+            "technique": ""
+        }
+    ]
+},
+{
+    "id": "088",
+    "types": [
+        "Water"
+    ],
+    "name": "Umishi",
+    "image_url": "images/088.png",
+    "evolves_to": "Ukama",
+    "evolves_from": null,
+    "techniques": [
+        {
+            "level": "",
+            "technique": ""
+        }
+    ]
+},
+{
+    "id": "089",
+    "types": [
+        "Water"
+    ],
+    "name": "Ukama",
+    "image_url": "images/089.png",
+    "evolves_to": null,
+    "evolves_from": "Umishi",
+    "techniques": [
+        {
+            "level": "-",
+            "technique": "Nimble"
+        },
+        {
+            "level": "-",
+            "technique": "Cooperation"
+        },
+        {
+            "level": "-",
+            "technique": "Water Cannon"
+        },
+        {
+            "level": "-",
+            "technique": "Sharp Rain"
+        },
+        {
+            "level": "-",
+            "technique": "Finbeat"
+        },
+        {
+            "level": "-",
+            "technique": "Water Blade"
+        }
+    ]
+},
+{
+    "id": "091",
+    "types": [
+        "UnknownType"
+    ],
+    "name": "Raignet",
+    "image_url": "images/091.png",
+    "evolves_to": "Unknown",
+    "evolves_from": "Unknown",
+    "techniques": [
+        {
+            "level": "",
+            "technique": ""
+        }
+    ]
+},
+{
+    "id": "092",
+    "types": [
+        "Melee"
+    ],
+    "name": "Smazee",
+    "image_url": "images/092.png",
+    "evolves_to": "Unknown",
+    "evolves_from": null,
+    "techniques": [
+        {
+            "level": "-",
+            "technique": "Kick"
+        },
+        {
+            "level": "",
+            "technique": "Intimidation"
+        },
+        {
+            "level": "-",
+            "technique": "Martial Strike"
+        },
+        {
+            "level": "",
+            "technique": "Show Off"
+        },
+        {
+            "level": "",
+            "technique": "Uppercut"
+        }
+    ]
+},
+{
+    "id": "095",
+    "types": [
+        "Earth"
+    ],
+    "name": "Zizare",
+    "image_url": "images/095.png",
+    "evolves_to": "Unknown",
+    "evolves_from": "Unknown",
+    "techniques": [
+        {
+            "level": "",
+            "technique": ""
+        }
+    ]
+},
+{
+    "id": "104",
+    "types": [
+        "Nature"
+    ],
+    "name": "Cerneaf",
+    "image_url": "images/104.png",
+    "evolves_to": null,
+    "evolves_from": "Unknown",
+    "techniques": [
+        {
+            "level": "",
+            "technique": ""
+        }
+    ]
+},
+{
+    "id": "113",
+    "types": [
+        "Wind",
+        "Electric"
+    ],
+    "name": "Ganki",
+    "image_url": "images/113.png",
+    "evolves_to": "Unknown",
+    "evolves_from": "Unknown",
+    "techniques": [
+        {
+            "level": "16",
+            "technique": "Chain Lightning"
+        },
+        {
+            "level": "-",
+            "technique": "DC Beam"
+        },
+        {
+            "level": "-",
+            "technique": "Sparks"
+        },
+        {
+            "level": "13",
+            "technique": "Hypnosis"
+        },
+        {
+            "level": "-",
+            "technique": "Wind Blade"
+        },
+        {
+            "level": "-",
+            "technique": "Nimble"
+        }
+    ]
+},
+{
+    "id": "115",
+    "types": [
+        "UnknownType"
+    ],
+    "name": "Oceara",
+    "image_url": "images/115.png",
+    "evolves_to": null,
+    "evolves_from": null,
+    "techniques": [
+        {
+            "level": "",
+            "technique": ""
+        }
+    ]
+},
+{
+    "id": "123",
+    "types": [
+        "Water",
+        "Electric"
+    ],
+    "name": "Nessla",
+    "image_url": "images/123.png",
+    "evolves_to": null,
+    "evolves_from": null,
+    "techniques": [
+        {
+            "level": "",
+            "technique": "Bubbles"
+        },
+        {
+            "level": "",
+            "technique": "Water Blade"
+        },
+        {
+            "level": "-",
+            "technique": "Strangle"
+        },
+        {
+            "level": "-",
+            "technique": "Chain Lightning"
+        },
+        {
+            "level": "-",
+            "technique": "Sparks"
+        },
+        {
+            "level": "-",
+            "technique": "Tesla Prison"
+        },
+        {
+            "level": "19",
+            "technique": "Stare"
+        }
+    ]
+},
+{
+    "id": "124",
+    "types": [
+        "Mental"
+    ],
+    "name": "Valiar",
+    "image_url": "images/124.png",
+    "evolves_to": "Unknown",
+    "evolves_from": "Unknown",
+    "techniques": [
+        {
+            "level": "",
+            "technique": ""
+        }
+    ]
+},
+{
+    "id": "127",
+    "types": [
+        "Water"
+    ],
+    "name": "Kalazu",
+    "image_url": "images/127.png",
+    "evolves_to": "Kalabyss",
+    "evolves_from": null,
+    "techniques": [
+        {
+            "level": "",
+            "technique": ""
+        }
+    ]
+},
+{
+    "id": "128",
+    "types": [
+        "Water",
+        "Toxic"
+    ],
+    "name": "Kalabyss",
+    "image_url": "images/128.png",
+    "evolves_to": null,
+    "evolves_from": "Kalazu",
+    "techniques": [
+        {
+            "level": "-",
+            "technique": "Strangle"
+        },
+        {
+            "level": "-",
+            "technique": "Aqua Stone"
+        },
+        {
+            "level": "-",
+            "technique": "Pressure Wash"
+        },
+        {
+            "level": "-",
+            "technique": "Bubbles"
+        },
+        {
+            "level": "-",
+            "technique": "Water Blade"
+        },
+        {
+            "level": "-",
+            "technique": "Tentacle Whip"
+        },
+        {
+            "level": "-",
+            "technique": "Toxic Inc"
+        }
+    ]
+},
+{
+    "id": "130",
+    "types": [
+        "Wind"
+    ],
+    "name": "Tuwai",
+    "image_url": "images/130.png",
+    "evolves_to": "Unknown",
+    "evolves_from": null,
+    "techniques": [
+        {
+            "level": "Base",
+            "technique": "Peck"
+        },
+        {
+            "level": "Base",
+            "technique": "Wind Blade"
+        },
+        {
+            "level": "6",
+            "technique": "Shrill Voice"
+        },
+        {
+            "level": "10",
+            "technique": "Feather Gatling"
+        },
+        {
+            "level": "14",
+            "technique": "Wind Burst"
+        },
+        {
+            "level": "18",
+            "technique": "Multiple Pecks"
+        }
+    ]
+},
+{
+    "id": "141",
+    "types": [
+        "Wind"
+    ],
+    "name": "Pigepic",
+    "image_url": "images/141.png",
+    "evolves_to": null,
+    "evolves_from": null,
+    "techniques": [
+        {
+            "level": "-",
+            "technique": "Bamboozle"
+        },
+        {
+            "level": "-",
+            "technique": "Scratch"
+        },
+        {
+            "level": "-",
+            "technique": "Nibble"
+        },
+        {
+            "level": "-",
+            "technique": "Nimble"
+        },
+        {
+            "level": "11",
+            "technique": "Heavy Blow"
+        },
+        {
+            "level": "17",
+            "technique": "Wind Burst"
+        }
+    ]
+}
+]
