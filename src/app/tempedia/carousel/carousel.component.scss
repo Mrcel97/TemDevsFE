@@ -15,7 +15,8 @@
   transform: translate(0, -50%);
 
   .carousel-temtem-item {
-    height: 22em;
+    height: 70vh;
+    max-height: 450px;
 
     ul {
       padding: 0;

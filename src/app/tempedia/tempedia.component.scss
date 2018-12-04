@@ -15,7 +15,8 @@
 }
 
 .icon {
-  width: 3vw;
+  width: 5vw;
+  max-width: 50px;
   margin: 90vh auto auto auto;
 }
 
@@ -26,6 +27,7 @@
   right: 0;
   max-width: 95.9vw;
   background-color: transparent;
+  margin: auto;
 }
 
 .border-full-front {
