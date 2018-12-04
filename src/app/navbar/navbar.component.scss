@@ -17,3 +17,11 @@
 .animated:hover {
   background-color: $primary-color;
 }
+
+.dropdown-toggle {
+  display: inline;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}

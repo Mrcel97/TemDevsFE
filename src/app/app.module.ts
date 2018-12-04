@@ -17,6 +17,7 @@ import { SelectorComponent } from './selector/selector.component';
 import { TempediaComponent } from './tempedia/tempedia.component';
 import { TemtemEntryComponent } from './tempedia/temtem-entry/temtem-entry.component';
 import { CarouselComponent } from './tempedia/carousel/carousel.component';
+import { UserInfoComponent } from './navbar/user-info/user-info.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { CarouselComponent } from './tempedia/carousel/carousel.component';
     TempediaComponent,
     TemtemEntryComponent,
     CarouselComponent,
+    UserInfoComponent,
   ],
   imports: [
     BrowserModule,

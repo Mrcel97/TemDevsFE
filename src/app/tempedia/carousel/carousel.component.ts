@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, ViewChild } from '@angular/core';
+import { Component, OnInit, Input, ViewChild, OnDestroy } from '@angular/core';
 import { Temtem } from 'src/app/models/temtem';
 import { interval, Subscription } from 'rxjs';
 
@@ -7,25 +7,23 @@ import { interval, Subscription } from 'rxjs';
   templateUrl: './carousel.component.html',
   styleUrls: ['./carousel.component.scss']
 })
-export class CarouselComponent implements OnInit {
-  
+export class CarouselComponent implements OnInit, OnDestroy {
+
   @Input() public temtems: Temtem[] = [];
 
   @ViewChild('slickModal') private slickCarousel;
 
   private subscription: Subscription;
 
-  public slideConfig = { 
-    slidesToShow: 5, 
+  public slideConfig = {
+    slidesToShow: 4,
     slidesToScroll: 1,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 5,
+          slidesToShow: 4,
           slidesToScroll: 1,
-          infinite: true,
-          dots: true
         }
       },
       {

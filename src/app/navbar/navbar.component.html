@@ -1,6 +1,6 @@
 <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark indigo fixed-top  scrolling-navbar" [containerInside]="false">
   <mdb-navbar-brand style="display: inline">
-    <img class="logo" src="../../assets/logo.png" alt="temtem_logo">
+    <img class="logo" src="/assets/logo.png" alt="temtem_logo">
   </mdb-navbar-brand>
   <links>
     <ul class="navbar-nav ml-auto">
@@ -10,14 +10,15 @@
       <li class="nav-item animated">
         <a routerLink="/selector" class="nav-link waves-light" mdbWavesEffect>Tools</a>
       </li>
-      <li>
-        <a class="nav-link waves-light" mdbWavesEffect [href]="discordAuthUrl">Discord login</a>
+      <li *ngIf="!user">
+        <a class="nav-link waves-light" mdbWavesEffect [href]="discordAuthUrl"><i class="fab fa-discord mr-1"></i>Discord login</a>
       </li>
-      <li class="nav-item dropdown btn-group animated" dropdown>
+      <li *ngIf="user" class="nav-item dropdown btn-group animated" dropdown>
           <a dropdownToggle type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
-          Basic dropdown<span class="caret"></span></a>
+            <app-user-info [discordUser]="user"></app-user-info>
+          </a>
           <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
-              <a class="dropdown-item waves-light" href="#" mdbWavesEffect>Action</a>
+              <a class="dropdown-item waves-light" (click)="discordAuth.logout()"  mdbWavesEffect><i class="fas fa-sign-out-alt mr-1"></i>Logout</a>
               <a class="dropdown-item waves-light" href="#" mdbWavesEffect>Another action</a>
               <a class="dropdown-item waves-light" href="#" mdbWavesEffect>Something else here</a>
               <div class="divider dropdown-divider"></div>
