@@ -1,0 +1,50 @@
+[
+{
+    "name": "Neutral",
+    "image_url": "images/Neutral.png"
+},
+{
+    "name": "Fire",
+    "image_url": "images/Fire.png"
+},
+{
+    "name": "Nature",
+    "image_url": "images/Nature.png"
+},
+{
+    "name": "Water",
+    "image_url": "images/Water.png"
+},
+{
+    "name": "Electric",
+    "image_url": "images/Electric.png"
+},
+{
+    "name": "Mental",
+    "image_url": "images/Mental.png"
+},
+{
+    "name": "Earth",
+    "image_url": "images/Earth.png"
+},
+{
+    "name": "Wind",
+    "image_url": "images/Wind.png"
+},
+{
+    "name": "Crystal",
+    "image_url": "images/Crystal.png"
+},
+{
+    "name": "Digital",
+    "image_url": "images/Digital.png"
+},
+{
+    "name": "Melee",
+    "image_url": "images/Melee.png"
+},
+{
+    "name": "Toxic",
+    "image_url": "images/Toxic.png"
+}
+]

@@ -1,0 +1,72 @@
+[
+{
+    "type_": "Furniture",
+    "img_url": "",
+    "name": "Pigepic plushie",
+    "cost": "",
+    "space": "1"
+},
+{
+    "type_": "Furniture",
+    "img_url": "",
+    "name": "Couch",
+    "cost": "",
+    "space": "2"
+},
+{
+    "type_": "Furniture",
+    "img_url": "",
+    "name": "Couch corner",
+    "cost": "",
+    "space": "2"
+},
+{
+    "type_": "Furniture",
+    "img_url": "",
+    "name": "Blue rug",
+    "cost": "",
+    "space": "12"
+},
+{
+    "type_": "Flooring",
+    "img_url": "",
+    "name": "Pink wood",
+    "cost": "",
+    "space": null
+},
+{
+    "type_": "Flooring",
+    "img_url": "",
+    "name": "Grass green",
+    "cost": "",
+    "space": null
+},
+{
+    "type_": "Painting",
+    "img_url": "",
+    "name": "",
+    "cost": "",
+    "space": ""
+},
+{
+    "type_": "Painting",
+    "img_url": "",
+    "name": "",
+    "cost": "",
+    "space": ""
+},
+{
+    "type_": "Painting",
+    "img_url": "",
+    "name": "",
+    "cost": "",
+    "space": ""
+},
+{
+    "type_": "Wallpaper",
+    "img_url": "",
+    "name": "Forest",
+    "cost": "",
+    "space": null
+}
+]

@@ -1,0 +1,16 @@
+<div class="carousel-container center-screen p-sm-1 p-lg-2">
+  <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+    <div ngxSlickItem *ngFor="let t of temtems" class="slide">
+      <div class="dex-card carousel-temtem-item p-3 m-3">
+        <img class="temtem-image mt-4" src="/assets/{{ t.image_url }}" alt="{{ t.name }} image">
+        <p class="text-center">{{ t.name }}</p>
+        <div class="types text-center p-0 mt-0">
+          <ul class="d-inline-flex">
+            <li class="list-inline-item" *ngFor="let type of t.complexTypes"><img *ngIf="type" src="/assets/{{type.image_url}}"
+                alt=""></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </ngx-slick-carousel>
+</div>
