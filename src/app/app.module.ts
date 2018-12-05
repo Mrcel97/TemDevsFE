@@ -8,6 +8,9 @@ import { NavbarModule, WavesModule, ButtonsModule } from 'angular-bootstrap-md'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatSliderModule } from '@angular/material/slider';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 // Website-Components
 import { AppComponent } from './app.component';
@@ -19,6 +22,8 @@ import { TemtemEntryComponent } from './tempedia/temtem-entry/temtem-entry.compo
 import { CarouselComponent } from './tempedia/carousel/carousel.component';
 import { UserInfoComponent } from './navbar/user-info/user-info.component';
 import { TemtemProfileComponent } from './temtem-profile/temtem-profile.component';
+import { TournamentComponent } from './tournament/tournament.component';
+import { TournamentFormComponent } from './tournament/tournament-form/tournament-form.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +36,8 @@ import { TemtemProfileComponent } from './temtem-profile/temtem-profile.componen
     CarouselComponent,
     UserInfoComponent,
     TemtemProfileComponent,
+    TournamentComponent,
+    TournamentFormComponent,
   ],
   imports: [
     BrowserModule,
@@ -42,7 +49,10 @@ import { TemtemProfileComponent } from './temtem-profile/temtem-profile.componen
     BrowserAnimationsModule,
     MatGridListModule,
     HttpClientModule,
-    SlickCarouselModule
+    SlickCarouselModule,
+    MatTabsModule,
+    MatSliderModule,
+    MatSlideToggleModule,
   ],
   schemas: [ NO_ERRORS_SCHEMA ],
   providers: [],
