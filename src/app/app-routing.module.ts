@@ -15,7 +15,7 @@ const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'selector', component: SelectorComponent},
   {path: 'tempedia', component: TempediaComponent},
-  {path: 'temtem-profile', component: TemtemProfileComponent , canActivate: [AuthGuard]}
+  {path: 'temtem-profile', component: TemtemProfileComponent , canActivate: [AuthGuard]},
   {path: 'tournaments', component: TournamentComponent},
   {path: 'tournaments/form', component: TournamentFormComponent},
 ];

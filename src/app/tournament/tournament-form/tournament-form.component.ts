@@ -9,8 +9,6 @@ import { MatTabChangeEvent } from '@angular/material';
 })
 export class TournamentFormComponent implements OnInit {
 
-  
-
   constructor() { }
 
   ngOnInit() {
