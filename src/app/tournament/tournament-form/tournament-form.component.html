@@ -1,0 +1,102 @@
+<div class="parallax">
+  <div class="card col-9 row d-flex justify-content-center">
+    <h4 class="card-title">Tournament Manager</h4>
+    <div class="row d-flex justify-content-center button-container">
+      <button
+        class="btn btn-outline-warning waves-effect col-5"
+        (click)="addTab(selectAfterAdding.checked)" mdbRippleRadius>
+        Add team
+      </button>
+      <button
+        class="btn btn-outline-warning waves-effect col-5"
+        [disabled]="tabs.length === 1"
+        (click)="removeTab(actualTab)" mdbRippleRadius>
+        Delete Team
+      </button>
+      <mat-checkbox #selectAfterAdding></mat-checkbox>
+    </div>
+    <div class="compressed">
+      <mat-tab-group [selectedIndex]="selected.value"
+        (selectedIndexChange)="selected.setValue($event)"
+        (selectedTabChange)="onLinkClick($event)">
+        
+        <mat-tab *ngFor="let tab of tabs; let index = index" [label]="tab">
+          <!-- TOURNAMENT SETUP -->
+          <div *ngIf="actualTab == 0">
+            <div class="tournament-info d-flex justify-content-start">
+              <div class="tournament-image">
+                <div class="drag-and-drop">
+                  +
+                </div>
+              </div>
+              <div class="tournament-data">
+                  <p>Owner: Admin</p>
+                  <p>Date: {{date | date: 'MM/dd/yyyy, HH:mm:ss a'}}</p>
+              </div>
+            </div>
+            <div class="container">
+              <div class="tournament-form row">
+                <div class="torunament-form-left col-sm-6">
+                    <div class="md-form">
+                      <!-- Text Input -->
+                      <input mdbInputDirective type="text" id="form1" class="form-control">
+                      <label for="form1" class="">Tournament name</label>
+
+                      <!-- Slider -->
+                      <p class="slider-help">Nº of players for team</p>
+                      <mat-slider
+                        thumbLabel
+                        [displayWith]="formatLabel"
+                        tickInterval="1"
+                        min="1"
+                        max="12"></mat-slider>
+
+                      <!-- Prize Pool -->
+                      <div>
+                        <div class="d-flex justify-content-start">
+                          <p class="prize-pool-help">Prize Pool</p>
+                          <mat-slide-toggle class="toggler"></mat-slide-toggle>
+                        </div>
+                        <input mdbInputDirective type="text" id="form2" class="form-control">
+                        <label for="form2" class=""></label>
+                      </div>
+
+                      <!-- Options -->
+                      <p class="prize-pool-help">Tournament Rules</p>
+                      <div class="container">
+                        <div class="row">
+                            <mat-slide-toggle class="col-sm-3 spaced">A</mat-slide-toggle>
+                            <mat-slide-toggle class="col-sm-3 spaced">B</mat-slide-toggle>
+                            <mat-slide-toggle class="col-sm-3 spaced">C</mat-slide-toggle>
+                        </div>
+                        <div style="margin-top: 1em;" class="row">
+                            <mat-slide-toggle class="col-sm-3 spaced">A</mat-slide-toggle>
+                            <mat-slide-toggle class="col-sm-3 spaced">B</mat-slide-toggle>
+                            <mat-slide-toggle class="col-sm-3 spaced">C</mat-slide-toggle>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="torunament-form-right col-sm-6">
+                  <div class="md-form">
+                    <textarea class="md-textarea form-control " rows="3" id="input_text" type="text" length="120" mdbCharCounter mdbInputDirective></textarea>
+                    <label for="input_text">Tournament description</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- TEAMS SETUP -->
+          <div *ngIf="actualTab != 0">
+            <p>TEAM {{actualTab}} FORM</p>
+          </div>
+        </mat-tab>
+      </mat-tab-group>   
+    </div>     
+  </div>
+</div>
+<div class="container bottom-detail border-full">
+  <div class="row border-full-front">
+  </div>
+</div>
