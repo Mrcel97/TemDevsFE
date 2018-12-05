@@ -62,6 +62,10 @@
     color: whitesmoke;
   }
 
+  input {
+    color: whitesmoke;
+  }
+
   background-color: #525252;
   color: whitesmoke;
 }
@@ -73,3 +77,17 @@
 
 
 
+/* CUSTOM RADIO */
+.gender-selector > input[type="radio"] {
+  display:none;
+}
+.gender-selector > input[type="radio"] + label .fa-circle {
+  color: silver;
+  transition: color .2s ease;
+}
+.gender-selector > input[type="radio"]:checked + label .male {
+  color: deepskyblue;
+}
+.gender-selector > input[type="radio"]:checked + label .female {
+  color: pink;
+}
