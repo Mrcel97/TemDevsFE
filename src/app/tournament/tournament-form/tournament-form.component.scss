@@ -1,0 +1,165 @@
+@import "../../../theme.scss";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+.parallax {
+  /* The image used */
+  background-image: url("../../../assets/home_bg.png");
+
+  /* Set a specific height */
+  height: 95vh;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding-top: 1.5em;
+}
+
+.title,
+.description {
+  text-align: center;
+  margin: auto;
+}
+
+.logo {
+  position: absolute;
+  right: 0px;
+  width: 175px;
+  margin-top: 48em;
+  text-align: right;
+}
+
+.title {
+  font-size: 5em;
+}
+
+.description {
+  margin-top: 1em;
+  width: 60%;
+}
+
+.bottom-detail {
+  max-width: 100%;
+  margin: 0;
+  margin-top: -1em;
+  position: fixed;
+}
+
+.bottom-detail > .row {
+  background-color: #372d4a;
+  min-height: 50vh;
+}
+
+.card {
+  border-radius: 10px;
+  background-color: $primary-color !important;
+  margin: 6em auto auto auto !important;
+}
+
+.card-title {
+  margin: .4em 0 auto .125em;
+  color: $accent-color-variant;
+}
+
+.card-content {
+  background-color: $accent-color;
+  border-radius: 0 0 5px 5px;
+}
+
+.border-full-front {
+  border-top: solid transparent 2em;
+  -webkit-border-image: url(../../../assets/div_border.png) 45 stretch;
+  -o-border-image: url(../../../assets/div_border.png) 45 stretch;
+  border-image: url(../../../assets/div_border.png) 45 stretch;
+  border-image-repeat: round;
+  border-image-slice: 100% 0 0 0;
+}
+
+.border-full {
+  border-top: solid transparent 1em;
+  -webkit-border-image: url(../../../assets/div_border.png) 45 stretch;
+  -o-border-image: url(../../../assets/div_border.png) 45 stretch;
+  border-image: url(../../../assets/div_border.png) 45 stretch;
+  border-image-repeat: round;
+  border-image-slice: 100% 0 0 0;
+}
+
+.parallax>.row {
+  margin: auto;
+  background-color: transparent;
+}
+
+.example-input-label,
+.example-add-tab-button,
+.example-delete-tab-button {
+  margin: 8px;
+}
+
+.compressed {
+  max-width: 100%;
+}
+
+.btn {
+  padding: 0rem;
+}
+
+.button-container {
+  margin-top: 1em;
+}
+
+.tournament-image {
+  margin: 1em;
+}
+
+.drag-and-drop {
+  display: table-cell; 
+  vertical-align: middle;
+  background-color: #875e85;
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+  min-width: 100px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: $accent-color-variant;
+}
+
+// Text input - Tournament name
+
+.tournament-data {
+  margin-top: 2em;
+  color: $accent-color-variant;
+}
+
+// Slider
+
+.slider-help {
+  margin-top: 2em;
+  margin-bottom: -.5em;
+  font-size: .85rem;
+  color: $accent-color-variant;
+}
+
+// Prize Pool
+
+.prize-pool-help {
+  font-size: .85rem;
+  margin-bottom: 0;
+  color: $accent-color-variant;
+}
+
+// Rules
+
+.toggler {
+  position: absolute;
+  top: 7.2em;
+  left: 4.6em;
+}
+
+.spaced {
+  margin: auto .75em 1em auto;
+  font-size: 1px;
+}
