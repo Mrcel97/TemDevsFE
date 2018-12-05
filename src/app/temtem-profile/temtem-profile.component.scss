@@ -1,0 +1,46 @@
+.card-icon {
+  margin: auto;
+  margin-top: -2em;
+  height: 5%;
+
+  img {
+    width: 7em;
+    display: block;
+    margin: auto;
+  }
+}
+
+.main-container {
+  padding: 5em;
+}
+
+.profile-card {
+  position: relative;
+}
+
+.discord-avatar {
+  width: 70%;
+}
+
+.temtem-card {
+  // display: flex;
+  .card-icon {
+    img {
+      width: 11em;
+    }
+  }
+}
+
+.discord-card {
+  background-color: #525252;
+  color: whitesmoke;
+}
+
+.card-content {
+  width: 90%;
+  margin: auto;
+}
+
+input {
+  color: whitesmoke;
+}

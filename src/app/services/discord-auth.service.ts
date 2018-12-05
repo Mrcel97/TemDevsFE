@@ -40,6 +40,8 @@ export class DiscordAuthService {
    * @returns True if token has been successfully fetched otherwise False
    */
   public tokenFromUrl(url: string): boolean {
+    console.log(url);
+
     this.credentials = {
       tokenType: this.getParameterByName('token_type', url),
       accessToken: this.getParameterByName('access_token', url),
@@ -55,6 +57,9 @@ export class DiscordAuthService {
   public getUser(): Observable<DiscordUser> {
     if (this.isAuthenticated()) {
       return of(this.authUser);
+    }
+    if (!this.tokenFromUrl(location.href)) {
+      return of(null);
     }
     return this.http.get<DiscordUser>(this.discordApi + '/users/@me', this.getAuthHeaders()).pipe(
       map(res => {
@@ -101,6 +106,8 @@ export class DiscordAuthService {
    */
   public isAuthenticated(): boolean {
     this.getUserFromStorage();
+    console.log(this.authUser);
+
     return !isNullOrUndefined(this.authUser);
   }
 
@@ -111,13 +118,14 @@ export class DiscordAuthService {
     this.authUser = null;
     this.credentials = null;
     this.userChange$.next(null);
+    localStorage.removeItem('user');
   }
 
   /**
    * If the user is in memory returns it, if not gets it from local storage
    */
   private getUserFromStorage(): DiscordUser {
-    if (this.authUser !== null) {
+    if (!isNullOrUndefined(this.authUser)) {
       return this.authUser;
     } else {
       this.authUser = JSON.parse(localStorage.getItem('user'));
