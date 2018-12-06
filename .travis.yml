@@ -19,3 +19,10 @@ script:
 
 after_success:
   - firebase deploy --token $FIREBASE_TOKEN
+  
+notifications:
+  email:
+    recipients:
+      - temdevssoftware@gmail.com
+    on_success: never
+    on_failure: always
