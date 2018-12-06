@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, ViewChild, OnDestroy } from '@angular/core';
-import { Temtem } from 'src/app/models/temtem';
+import { Temtem } from './../../shared/models/temtem';
 import { interval, Subscription } from 'rxjs';
 
 @Component({

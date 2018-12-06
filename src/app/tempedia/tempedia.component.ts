@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { TemtemService } from '../services/temtem.service';
-import { Temtem } from '../models/temtem';
-import { Observable, forkJoin } from 'rxjs';
-import { Type } from '../models/type';
+import { TemtemService } from '../shared/services/temtem.service';
+import { Temtem } from '../shared/models/temtem';
+import { forkJoin } from 'rxjs';
+import { Type } from '../shared/models/type';
 
 @Component({
   selector: 'app-tempedia',

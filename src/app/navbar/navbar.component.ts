@@ -1,7 +1,7 @@
 import { Router } from '@angular/router';
-import { DiscordUser } from './../models/discord.user';
+import { DiscordUser } from './../shared/models/discord.user';
 import { Component, OnInit } from '@angular/core';
-import { DiscordAuthService } from '../services/discord-auth.service';
+import { DiscordAuthService } from '../shared/services/discord-auth.service';
 
 @Component({
   selector: 'app-navbar',

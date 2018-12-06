@@ -1,69 +1,11 @@
 <div class="main-container">
   <div class="row mt-5">
     <div class="col-lg-6 col-sm-12 col-md-6 pl-4 pr-4 pb-4 mb-5">
-      <div class="profile-card card discord-card">
-        <div class="card-icon dicord-icon"><img src="/assets/discord.png"></div>
-        <div *ngIf="user" class="card-content p-4">
-          <!-- Avatar and username -->
-          <div class="row align-items-center">
-            <div class="col-4">
-              <img class="rounded-circle discord-avatar" src="{{ user.avatar }}">
-            </div>
-            <div class="col-8">
-              <h3 class="discord-username">{{ user.username }}</h3>
-            </div>
-          </div>
-          <div class="md-form mt-5">
-            <input type="email" id="email" [value]="user.email" disabled="true" class="form-control" mdbInputDirective>
-            <label for="email">Email</label>
-          </div>
-          <div class="md-form mt-5">
-            <input type="text" id="locale" [value]="user.locale" disabled="true" class="form-control" mdbInputDirective>
-            <label for="locale">Locale</label>
-          </div>
-        </div>
-      </div>
+      <app-discord-profile-card [user]="user"></app-discord-profile-card>
     </div>
 
     <div class="col-lg-6 col-sm-12 col-md-6  pl-4 pr-4 pb-4" >
-      <div class="profile-card card temtem-card">
-        <div class="card-icon"><img src="/assets/logo.png"></div>
-
-        <div *ngIf="user" class="card-content p-4">
-            <!-- Avatar and username -->
-            <div class="row align-items-center">
-              <div class="col-4">
-                <img class="rounded-circle discord-avatar" src="{{ user.avatar }}">
-              </div>
-              <div class="col-8">
-                <div class="md-form mt-5">
-                  <input type="text" id="username" class="form-control" mdbInputDirective>
-                  <label for="username">Temtem username</label>
-                </div>
-              </div>
-            </div>
-
-            <label>Gender</label>
-            <div class="gender-selector">
-              <input type="radio" name="option" id="genderFemale">
-              <label for="genderFemale">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x female"></i>
-                  <i class="fa fa-venus fa-stack-1x fa-inverse"></i>
-                </span>
-              </label>
-              <input type="radio" name="option" id="genderMale" checked />
-              <label for="genderMale">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x male"></i>
-                  <i class="fa fa-mars fa-stack-1x fa-inverse"></i>
-                </span>
-              </label>
-            </div>
-            <button type="button" class="pull-right btn">Save</button>
-          </div>
-
-      </div>
+      <app-temtem></app-temtem>
     </div>
   </div>
 </div>

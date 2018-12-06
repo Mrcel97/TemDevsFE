@@ -1,5 +1,5 @@
-import { DiscordUser } from './../models/discord.user';
-import { DiscordAuthService } from './../services/discord-auth.service';
+import { DiscordUser } from './../shared/models/discord.user';
+import { DiscordAuthService } from './../shared/services/discord-auth.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
