@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  discordUrlCallback: "http://localhost:4200"
+  discordUrlCallback: "https://temdevsfe.firebaseapp.com/"
 };

@@ -1,27 +1,30 @@
 import { Component, OnInit } from '@angular/core';
-import {FormControl} from '@angular/forms';
+import { FormControl } from '@angular/forms';
 import { MatTabChangeEvent } from '@angular/material';
+
+import { TournamentService } from './../../services/tournament.service';
+import { BehaviorSubject, Subject } from 'rxjs';
 
 @Component({
   selector: 'app-tournament-form',
   templateUrl: './tournament-form.component.html',
-  styleUrls: ['./tournament-form.component.scss']
+  styleUrls: ['../tournament.component.scss']
 })
 export class TournamentFormComponent implements OnInit {
 
-  
+  actualTab = 0;
+  sliderValue;
+  date = new Date();
+  teams = 0;
+  tabs = ['Setup'];
+  selected = new FormControl(0);
 
-  constructor() { }
+
+  constructor( private tournamentService: TournamentService ) { }
 
   ngOnInit() {
   }
 
-  actualTab = 0;
-  date = new Date();
-  teams = 0;
-  slider = 0;
-  tabs = ['Setup'];
-  selected = new FormControl(0);
 
   addTab(selectAfterAdding: boolean) {
     this.teams = this.teams+=1;
@@ -43,7 +46,6 @@ export class TournamentFormComponent implements OnInit {
   }
 
   formatLabel(value: number | null) {
-    this.slider = value;
     return value;
   }
 

@@ -1,0 +1,39 @@
+<div class="tournament-info d-flex justify-content-start">
+  <div class="tournament-image">
+    <div class="drag-and-drop">
+      +
+    </div>
+  </div>
+  <div class="tournament-data">
+    <p>Owner: Admin</p>
+    <p>Date: {{date | date: 'MM/dd/yyyy, HH:mm:ss a'}}</p>
+  </div>
+</div>
+<div class="m-4">
+  <div class="container">
+    <div class="tournament-form row">
+      <div class="torunament-form-left col-sm-6">
+          <div class="md-form">
+            <!-- Text Input -->
+            <input mdbInputDirective type="text" id="form1" class="form-control">
+            <label for="form1" class="">Team name</label>
+          </div>
+          <div class="row">
+            <div class="col-10 md-form">
+              <input mdbInputDirective type="text" id="form2" class="form-control">
+              <label for="form2" class="player-label">Player</label>
+            </div>
+            <div class="col-2">
+              <button mdbBtn type="button" color="warning" class="add-player" mdbTooltip="Set temtem team" placement="top" mdbWavesEffect><p class="button-label">+</p></button>
+            </div>
+          </div>
+      </div>
+      <div class="torunament-form-right col-sm-6">
+        <div class="md-form">
+          <textarea class="md-textarea form-control " rows="3" id="input_text" type="text" length="120" mdbCharCounter mdbInputDirective></textarea>
+          <label for="input_text">Team description</label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
