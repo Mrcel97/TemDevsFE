@@ -19,7 +19,7 @@
       <mat-tab-group [selectedIndex]="selected.value"
         (selectedIndexChange)="selected.setValue($event)"
         (selectedTabChange)="onLinkClick($event)">
-        
+
         <mat-tab *ngFor="let tab of tabs; let index = index" [label]="tab">
           <!-- TOURNAMENT SETUP -->
           <div *ngIf="actualTab == 0">
@@ -92,7 +92,7 @@
             <app-tournament-team-form></app-tournament-team-form>
           </div>
         </mat-tab>
-      </mat-tab-group>   
-    </div>     
+      </mat-tab-group>
+    </div>
   </div>
 </div>

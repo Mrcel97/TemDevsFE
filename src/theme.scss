@@ -4,3 +4,86 @@ $accent-color: #FEC461;
 $accent-color-variant: #ff8800;
 
 $indigo-gradien: linear-gradient(rgb(82, 43, 74)90%, #965e7b, #876e8f 10%, rgb(82, 43, 74)90%, #876e8f, #965e7b);
+
+$md-primary: (
+    50 : #ece8eb,
+    100 : #d1c6ce,
+    200 : #b2a0ae,
+    300 : #937a8d,
+    400 : #7b5e74,
+    500 : #64415c,
+    600 : #5c3b54,
+    700 : #52324a,
+    800 : #482a41,
+    900 : #361c30,
+    A100 : #ff7bdd,
+    A200 : #ff48cf,
+    A400 : #ff15c2,
+    A700 : #fb00b9,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #ffffff,
+        A700 : #ffffff,
+    )
+);
+
+$md-accent: (
+    50 : #fff8ec,
+    100 : #ffedd0,
+    200 : #ffe2b0,
+    300 : #fed690,
+    400 : #fecd79,
+    500 : #fec461,
+    600 : #febe59,
+    700 : #feb64f,
+    800 : #feaf45,
+    900 : #fda233,
+    A100 : #ffffff,
+    A200 : #ffffff,
+    A400 : #ffeedc,
+    A700 : #ffe2c3,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #000000,
+        800 : #000000,
+        900 : #000000,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+@import '~@angular/material/theming';
+@include mat-core();
+
+$temtem-app-primary: mat-palette($md-primary);
+$temtem-app-accent:  mat-palette($md-accent);
+
+// The warn palette is optional (defaults to red).
+$temtem-app-warn:    mat-palette($mat-red);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$temtem-app-theme: mat-light-theme($temtem-app-primary, $temtem-app-accent, $temtem-app-warn);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($temtem-app-theme);

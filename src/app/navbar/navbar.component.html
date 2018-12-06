@@ -18,11 +18,11 @@
             <app-user-info [discordUser]="user"></app-user-info>
           </a>
           <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
-              <a class="dropdown-item waves-light" (click)="discordAuth.logout()"  mdbWavesEffect><i class="fas fa-sign-out-alt mr-1"></i>Logout</a>
-              <a class="dropdown-item waves-light" href="#" mdbWavesEffect>Another action</a>
-              <a class="dropdown-item waves-light" href="#" mdbWavesEffect>Something else here</a>
-              <div class="divider dropdown-divider"></div>
-              <a class="dropdown-item waves-light" href="#" mdbWavesEffect>Separated link</a>
+            <a class="dropdown-item waves-light" (click)="logout()" mdbWavesEffect><i class="fas fa-sign-out-alt mr-1"></i>Logout</a>
+            <a class="dropdown-item waves-light" routerLink="/temtem-profile" mdbWavesEffect>Temtem Profile</a>
+            <a class="dropdown-item waves-light" href="#" mdbWavesEffect>Something else here</a>
+            <div class="divider dropdown-divider"></div>
+            <a class="dropdown-item waves-light" href="#" mdbWavesEffect>Separated link</a>
           </div>
       </li>
     </ul>

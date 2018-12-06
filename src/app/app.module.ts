@@ -1,3 +1,4 @@
+import { TournamentService } from './services/tournament.service';
 // Modules
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
@@ -6,11 +7,7 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { AppRoutingModule } from './app-routing.module';
 import { NavbarModule, WavesModule, ButtonsModule } from 'angular-bootstrap-md'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatGridListModule } from '@angular/material/grid-list';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
-import { MatTabsModule } from '@angular/material/tabs';
-import { MatSliderModule } from '@angular/material/slider';
-import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 // Website-Components
 import { AppComponent } from './app.component';
@@ -21,8 +18,15 @@ import { TempediaComponent } from './tempedia/tempedia.component';
 import { TemtemEntryComponent } from './tempedia/temtem-entry/temtem-entry.component';
 import { CarouselComponent } from './tempedia/carousel/carousel.component';
 import { UserInfoComponent } from './navbar/user-info/user-info.component';
+import { TemtemProfileComponent } from './temtem-profile/temtem-profile.component';
 import { TournamentComponent } from './tournament/tournament.component';
 import { TournamentFormComponent } from './tournament/tournament-form/tournament-form.component';
+import { TournamentTeamFormComponent } from './tournament/tournament-team-form/tournament-team-form.component';
+import { FormsModule } from '@angular/forms';
+import { MaterialModule } from './material.module';
+import { DiscordProfileCardComponent } from './temtem-profile/discord-profile-card/discord-profile-card.component';
+import { TemtemProfileCardComponent } from './temtem-profile/temtem-profile-card/temtem-profile-card.component';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -34,26 +38,29 @@ import { TournamentFormComponent } from './tournament/tournament-form/tournament
     TemtemEntryComponent,
     CarouselComponent,
     UserInfoComponent,
+    TemtemProfileComponent,
     TournamentComponent,
     TournamentFormComponent,
-  ],
+    TournamentTeamFormComponent,
+    DiscordProfileCardComponent,
+    TemtemProfileCardComponent,
+    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    SharedModule,
+    MaterialModule,
     MDBBootstrapModule.forRoot(),
     NavbarModule,
     WavesModule,
     ButtonsModule,
     BrowserAnimationsModule,
-    MatGridListModule,
-    HttpClientModule,
+    HttpClientModule,    
     SlickCarouselModule,
-    MatTabsModule,
-    MatSliderModule,
-    MatSlideToggleModule,
+    FormsModule
   ],
   schemas: [ NO_ERRORS_SCHEMA ],
-  providers: [],
+  providers: [ TournamentService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

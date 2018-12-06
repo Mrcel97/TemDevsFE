@@ -1,0 +1,21 @@
+<div class="profile-card card temtem-card">
+  <div class="card-icon"><img src="/assets/logo.png"></div>
+
+  <div class="card-content p-4">
+      <!-- Avatar and username -->
+      <div class="row align-items-center">
+        <div class="col-4">
+          <img class="rounded-circle temtem-avatar" src="/assets/images/127.png">
+        </div>
+        <div class="col-8">
+          <div class="md-form mt-5">
+            <input type="text" id="username" class="form-control" mdbInputDirective>
+            <label for="username">Temtem username</label>
+          </div>
+        </div>
+      </div>
+      <app-gender-selector (gender)="genderChange($event)"></app-gender-selector>
+      <button type="button" class="pull-right btn">Save</button>
+    </div>
+
+</div>
