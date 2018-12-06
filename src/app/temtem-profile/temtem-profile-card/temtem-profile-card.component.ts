@@ -8,8 +8,8 @@ import { Gender, TemtemProfile } from './../../shared/models/temtem-profile';
 })
 export class TemtemProfileCardComponent implements OnInit {
 
-  public profile: TemtemProfile;
-  
+  public profile: TemtemProfile = <TemtemProfile>{};
+
   constructor() { }
 
   ngOnInit() {
