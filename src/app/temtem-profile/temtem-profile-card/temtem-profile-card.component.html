@@ -14,24 +14,7 @@
           </div>
         </div>
       </div>
-
-      <label>Gender</label>
-      <div class="gender-selector">
-        <input type="radio" name="option" id="genderFemale">
-        <label for="genderFemale">
-          <span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x female"></i>
-            <i class="fa fa-venus fa-stack-1x fa-inverse"></i>
-          </span>
-        </label>
-        <input type="radio" name="option" id="genderMale" checked />
-        <label for="genderMale">
-          <span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x male"></i>
-            <i class="fa fa-mars fa-stack-1x fa-inverse"></i>
-          </span>
-        </label>
-      </div>
+      <app-gender-selector (gender)="genderChange($event)"></app-gender-selector>
       <button type="button" class="pull-right btn">Save</button>
     </div>
 

@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot, Router } from '@angular/router';
-import { Observable } from 'rxjs';
 import { DiscordAuthService } from '../shared/services/discord-auth.service';
 
 @Injectable({
@@ -16,6 +15,6 @@ export class AuthGuard implements CanActivate {
       return true;
     }
     this.router.navigateByUrl('/');
-    // return false;
+    return false;
   }
 }

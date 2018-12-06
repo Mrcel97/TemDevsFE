@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Gender, TemtemProfile } from './../../shared/models/temtem-profile';
 
 @Component({
   selector: 'app-temtem',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TemtemProfileCardComponent implements OnInit {
 
+  public profile: TemtemProfile;
+  
   constructor() { }
 
   ngOnInit() {
   }
 
+  public genderChange(value: Gender) {
+    this.profile.gender = value;
+  }
 }
