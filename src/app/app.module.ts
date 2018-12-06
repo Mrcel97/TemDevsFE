@@ -6,11 +6,7 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { AppRoutingModule } from './app-routing.module';
 import { NavbarModule, WavesModule, ButtonsModule } from 'angular-bootstrap-md'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatGridListModule } from '@angular/material/grid-list';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
-import { MatTabsModule } from '@angular/material/tabs';
-import { MatSliderModule } from '@angular/material/slider';
-import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 // Website-Components
 import { AppComponent } from './app.component';
@@ -24,6 +20,10 @@ import { UserInfoComponent } from './navbar/user-info/user-info.component';
 import { TemtemProfileComponent } from './temtem-profile/temtem-profile.component';
 import { TournamentComponent } from './tournament/tournament.component';
 import { TournamentFormComponent } from './tournament/tournament-form/tournament-form.component';
+import { DiscordProfileCardComponent } from './temtem-profile/discord-profile-card/discord-profile-card.component';
+import { TemtemProfileCardComponent } from './temtem-profile/temtem-profile-card/temtem-profile-card.component';
+import { SharedModule } from './shared/shared.module';
+import { MaterialModule } from './material.module';
 
 @NgModule({
   declarations: [
@@ -38,21 +38,21 @@ import { TournamentFormComponent } from './tournament/tournament-form/tournament
     TemtemProfileComponent,
     TournamentComponent,
     TournamentFormComponent,
+    DiscordProfileCardComponent,
+    TemtemProfileCardComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    SharedModule,
+    MaterialModule,
     MDBBootstrapModule.forRoot(),
     NavbarModule,
     WavesModule,
     ButtonsModule,
     BrowserAnimationsModule,
-    MatGridListModule,
-    HttpClientModule,
+    HttpClientModule,    
     SlickCarouselModule,
-    MatTabsModule,
-    MatSliderModule,
-    MatSlideToggleModule,
   ],
   schemas: [ NO_ERRORS_SCHEMA ],
   providers: [],
