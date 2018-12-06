@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Temtem } from 'src/app/models/temtem';
+import { Temtem } from './../../shared/models/temtem';
 
 @Component({
   selector: 'app-temtem-entry',

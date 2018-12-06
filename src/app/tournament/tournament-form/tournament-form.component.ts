@@ -3,7 +3,6 @@ import { FormControl } from '@angular/forms';
 import { MatTabChangeEvent } from '@angular/material';
 
 import { TournamentService } from './../../services/tournament.service';
-import { BehaviorSubject, Subject } from 'rxjs';
 
 @Component({
   selector: 'app-tournament-form',

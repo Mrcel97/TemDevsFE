@@ -1,6 +1,7 @@
-import { DiscordUser } from './../models/discord.user';
+import { Router } from '@angular/router';
+import { DiscordUser } from './../shared/models/discord.user';
 import { Component, OnInit } from '@angular/core';
-import { DiscordAuthService } from '../services/discord-auth.service';
+import { DiscordAuthService } from '../shared/services/discord-auth.service';
 
 @Component({
   selector: 'app-navbar',
@@ -12,16 +13,18 @@ export class NavbarComponent implements OnInit {
   public discordAuthUrl: string;
   public user: DiscordUser;
 
-  constructor(public discordAuth: DiscordAuthService) {
+  constructor(private discordAuth: DiscordAuthService,
+              private router: Router) {
     this.discordAuthUrl = this.discordAuth.generateDiscordAuthUrl();
   }
 
   ngOnInit() {
     this.discordAuth.userChange$.subscribe(res => this.user = res);
-    console.log(this.discordAuth.tokenFromUrl(location.href));
+    this.discordAuth.getUser().subscribe();
+  }
 
-    if (this.discordAuth.tokenFromUrl(location.href)) {
-      this.discordAuth.getUser().subscribe(res => console.log(res));
-    }
+  public logout() {
+    this.discordAuth.logout();
+    this.router.navigateByUrl('/');
   }
 }

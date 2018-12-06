@@ -1,4 +1,4 @@
-import { DiscordUser } from './../../models/discord.user';
+import { DiscordUser } from './../../shared/models/discord.user';
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
