@@ -1,4 +1,4 @@
-<div class="parallax">
+<div class="main-container">
   <div class="card col-9 row d-flex justify-content-center">
     <h4 class="card-title">Tournament Manager</h4>
     <div class="row d-flex justify-content-center button-container">
@@ -49,7 +49,7 @@
                         [displayWith]="formatLabel"
                         tickInterval="1"
                         min="1"
-                        max="12"></mat-slider>
+                        max="6"></mat-slider>
 
                       <!-- Prize Pool -->
                       <div>
@@ -89,14 +89,10 @@
 
           <!-- TEAMS SETUP -->
           <div *ngIf="actualTab != 0">
-            <p>TEAM {{actualTab}} FORM</p>
+            <app-tournament-team-form></app-tournament-team-form>
           </div>
         </mat-tab>
       </mat-tab-group>   
     </div>     
-  </div>
-</div>
-<div class="container bottom-detail border-full">
-  <div class="row border-full-front">
   </div>
 </div>
