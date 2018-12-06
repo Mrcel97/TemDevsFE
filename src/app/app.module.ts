@@ -1,3 +1,4 @@
+import { TournamentService } from './services/tournament.service';
 // Modules
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
@@ -23,6 +24,8 @@ import { CarouselComponent } from './tempedia/carousel/carousel.component';
 import { UserInfoComponent } from './navbar/user-info/user-info.component';
 import { TournamentComponent } from './tournament/tournament.component';
 import { TournamentFormComponent } from './tournament/tournament-form/tournament-form.component';
+import { TournamentTeamFormComponent } from './tournament/tournament-team-form/tournament-team-form.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -36,6 +39,7 @@ import { TournamentFormComponent } from './tournament/tournament-form/tournament
     UserInfoComponent,
     TournamentComponent,
     TournamentFormComponent,
+    TournamentTeamFormComponent,
   ],
   imports: [
     BrowserModule,
@@ -51,9 +55,10 @@ import { TournamentFormComponent } from './tournament/tournament-form/tournament
     MatTabsModule,
     MatSliderModule,
     MatSlideToggleModule,
+    FormsModule
   ],
   schemas: [ NO_ERRORS_SCHEMA ],
-  providers: [],
+  providers: [ TournamentService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
