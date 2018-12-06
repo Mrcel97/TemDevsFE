@@ -190,3 +190,20 @@
   margin: auto .75em 1em auto;
   font-size: 1px;
 }
+
+
+// Inputs
+
+.form-control {
+  color: $accent-color !important;
+}
+
+.md-form > label {
+  color: $accent-color-variant !important;
+}
+
+
+input, textarea{
+  border-radius: 10px;
+  color: $accent-color !important;
+}
