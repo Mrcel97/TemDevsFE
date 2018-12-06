@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Observable, forkJoin, Subject } from 'rxjs';
+import { Observable } from 'rxjs';
 import { Temtem } from '../models/temtem';
 import { HttpClient } from '@angular/common/http';
 import { Type } from '../models/type';

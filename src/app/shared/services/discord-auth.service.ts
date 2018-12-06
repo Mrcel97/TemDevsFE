@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { environment } from '../../environments/environment';
+import { environment } from './../../../environments/environment';
 import { Observable, Subject, of } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { DiscordUser } from '../models/discord.user';
