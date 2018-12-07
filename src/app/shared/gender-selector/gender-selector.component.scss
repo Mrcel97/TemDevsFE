@@ -1,13 +1,13 @@
-.gender-selector > input[type="radio"] {
+input[type="radio"] {
   display:none;
 }
-.gender-selector > input[type="radio"] + label .fa-circle {
+input[type="radio"] + label .fa-circle {
   color: silver;
   transition: color .2s ease;
 }
-.gender-selector > input[type="radio"]:checked + label .male {
+input[type="radio"]:checked + label .male {
   color: deepskyblue;
 }
-.gender-selector > input[type="radio"]:checked + label .female {
+input[type="radio"]:checked + label .female {
   color: pink;
 }
