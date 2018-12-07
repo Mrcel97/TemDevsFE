@@ -207,3 +207,51 @@ input, textarea{
   border-radius: 10px;
   color: $accent-color !important;
 }
+
+.form-button {
+  position: absolute;
+  width: 1.75em;
+  height: 1.75em;
+  border-radius: 50%;
+  color: $primary-color;
+  background-color: $accent-color;
+  font-size: 30px;
+  font-weight: bold;
+  z-index: 2;
+  margin-top: -.8em;
+  right: -.9em;
+}
+
+.form-button::after {
+  content: '+';
+}
+
+.clearfix:before,
+.clearfix:after {
+    display: table;
+}
+
+.cleaffix:after {
+  clear: both;
+}
+
+.trans {
+  -webkit-transition: background 1s, border-radius 1s, width .75s, content 2s;
+  transition: background 1s, border-radius 1s, width .75s, content 2s;
+}
+
+.circle:hover {
+  border-radius: 15px;
+}
+
+.circle:hover {
+  width: 4em;
+}
+
+.circle:hover::after {
+  display: grid;
+  vertical-align: middle;
+  font-size: 18px;
+  font-weight: bold;
+  content: 'Confirm!';
+}
