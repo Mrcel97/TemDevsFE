@@ -12,9 +12,11 @@
             <input type="text" placeholder="Temtem Username" id="username" matInput>
           </mat-form-field>
         </div>
+        <!-- End avatar and username -->
+
+        <!-- Favourite temtem select -->
         <div class="col-4 mt-4">
           <img *ngIf="!profile.favTemtem" class="rounded-circle temtem-avatar" src="/assets/logo.png">
-
           <img *ngIf="profile.favTemtem" class="rounded-circle temtem-avatar" src="/assets/{{ profile.favTemtem?.image_url }}">
         </div>
         <div class="col-8 mt-4">
@@ -35,6 +37,8 @@
           </mat-form-field>
         </div>
       </div>
+      <!-- End favourite temtem select -->
+
       <div class="gender-selector-container mt-4">
         <app-gender-selector (gender)="genderChange($event)"></app-gender-selector>
       </div>

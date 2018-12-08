@@ -24,12 +24,14 @@ export class TemtemProfileCardComponent implements OnInit {
   constructor(private temtemService: TemtemService) { }
 
   ngOnInit() {
-    this.temtemService.getTemtems().subscribe(res => this.temtems = res);
-    this.filteredOptions = this.temtemSelectControl.valueChanges
+    this.temtemService.getTemtems().subscribe(res => { 
+      this.temtems = res;
+      this.filteredOptions = this.temtemSelectControl.valueChanges
       .pipe(
         startWith(''),
         map(value => this._filter(value))
       );
+    });
   }
 
   private _filter(value: string): Temtem[] {        
