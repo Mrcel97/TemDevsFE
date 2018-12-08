@@ -1,0 +1,153 @@
+@import "../../../theme.scss";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+.card-title {
+  margin-bottom: .5em;
+}
+
+.compressed{
+  padding-left: 1em;
+}
+
+.tournament-intance {
+  margin: 2em auto 2em auto !important;
+  background-color: $accent-color !important;
+  width: 100%;
+}
+
+.tournament-img {
+  margin-top: 2em;
+  margin-left: 1em;
+}
+
+.image {
+  width: 150px;
+  height: 150px;
+  background-color: $primary-color;
+  border-radius: 10px;
+}
+
+.tournament-logo {
+  max-width: 80px;
+  max-height: 120px;
+  margin-top: .75em;
+}
+
+.col-lg-3 {
+  margin-right: 0 !important;
+}
+
+.tournament-info {
+  text-align: left;
+  margin-top: 6em;
+}
+
+h3, h5 {
+  font-weight: bold;
+  color: $primary-color;
+}
+
+.base-type {
+  display: grid;
+  vertical-align: bottom;
+  background-color: #523451;
+  border-radius: 10px;
+  max-width: 40px;
+  max-height: 40px;
+  margin: .25em;
+  transition: all .2s ease-in-out;
+}
+
+.base-type:hover {
+  z-index: 2;
+  transform: scale(1.5);
+}
+
+.type-1 {
+  background-color: #523451;
+}
+
+.type-2 {
+  background-color: #4CAF50;
+}
+
+.type-3 {
+  background-color: #EF5350;
+}
+
+.type-4 {
+  background-color: #64B5F6;
+}
+
+.type-5 {
+  background-color: #FFF176;
+}
+
+.type-6 {
+  background-color: #FFAB91;
+}
+
+.type-7 {
+  background-color: #BA68C8;
+}
+
+.type-8 {
+  background-color: #90A4AE;
+}
+
+.type-9 {
+  background-color: #9575CD;
+}
+
+.type-10 {
+  background-color: #80CBC4;
+}
+
+.type-A {
+  background-color: #FFEB3B;
+}
+
+.type-B {
+  background-color: #FF7043;
+}
+
+.user-icon {
+  max-width: 30px;
+  min-height: 30px;
+  margin-top: 10px;
+}
+
+.rules-list {
+  margin-bottom: 1.5em;
+}
+
+.tournament-desc {
+  text-align: justify;
+  color: $primary-color;
+  font-size: 100%;
+}
+
+.form-button {
+  position: absolute;
+  width: 4em;
+  height: 1.75em;
+  border-radius: 10px;
+  color: $accent-color;
+  background-color: $primary-color;
+  font-size: 30px;
+  font-weight: bold;
+  z-index: 2;
+  margin-top: -2em;
+  right: 1em;
+  top: 2.5em;
+  border: solid 5px #fe9d52;
+  transition: all .2s ease-in-out;
+}
+
+.form-button::after {
+  content: '';
+}
+
+.form-button:hover {
+  transform: scale(1.1);
+}

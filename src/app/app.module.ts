@@ -22,11 +22,12 @@ import { TemtemProfileComponent } from './temtem-profile/temtem-profile.componen
 import { TournamentComponent } from './tournament/tournament.component';
 import { TournamentFormComponent } from './tournament/tournament-form/tournament-form.component';
 import { TournamentTeamFormComponent } from './tournament/tournament-team-form/tournament-team-form.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MaterialModule } from './material.module';
 import { DiscordProfileCardComponent } from './temtem-profile/discord-profile-card/discord-profile-card.component';
 import { TemtemProfileCardComponent } from './temtem-profile/temtem-profile-card/temtem-profile-card.component';
 import { SharedModule } from './shared/shared.module';
+import { TournamentListComponent } from './tournament/tournament-list/tournament-list.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { SharedModule } from './shared/shared.module';
     TournamentTeamFormComponent,
     DiscordProfileCardComponent,
     TemtemProfileCardComponent,
+    TournamentListComponent,
     ],
   imports: [
     BrowserModule,
@@ -57,7 +59,8 @@ import { SharedModule } from './shared/shared.module';
     BrowserAnimationsModule,
     HttpClientModule,    
     SlickCarouselModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   schemas: [ NO_ERRORS_SCHEMA ],
   providers: [ TournamentService ],
