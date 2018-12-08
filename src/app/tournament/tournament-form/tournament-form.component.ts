@@ -3,6 +3,7 @@ import { FormControl } from '@angular/forms';
 import { MatTabChangeEvent } from '@angular/material';
 
 import { TournamentService } from './../../services/tournament.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-tournament-form',
@@ -19,7 +20,10 @@ export class TournamentFormComponent implements OnInit {
   selected = new FormControl(0);
 
 
-  constructor( private tournamentService: TournamentService ) { }
+  constructor( 
+      public router: Router,
+      private tournamentService: TournamentService 
+    ) { }
 
   ngOnInit() {
   }

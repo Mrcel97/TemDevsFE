@@ -1,0 +1,94 @@
+<div class="main-container">
+  <div class="card col-9 row d-flex justify-content-center">
+    <h2 class="card-title">Tournaments List</h2>
+    <div class="card compressed tournament-intance">
+      <div class="d-flex justify-content-end">
+        <button class="btn form-button waves-effect" mdbRippleRadius (click)="router.navigateByUrl('/tournaments/list')"><i class="fas fa-info"></i></button>
+      </div>
+      <div class="container tournament-desc">
+        <div class="row">
+          <div class="tournament-img">
+            <div class="image d-flex justify-content-center">
+              <img src="../../../assets/squid.png" class="tournament-logo" alt="tournament-logo">
+            </div>
+          </div>
+          <div class="col-sm-6 tournament-info">
+            <h3>Wednesday Clan Tournament</h3>
+            <h5>Owner: Thompson</h5>
+          </div>
+        </div>
+      </div>
+      <div class="container tournament-data">
+        <div class="row">
+          <div class="participants col-lg-3">
+            <h5>Participants: </h5>
+            <div class="container users-list">
+              <div class="row">
+                <div class="base-type type-1 col-sm-4 d-flex justify-content-center">
+                  <img class="user-icon" src="../../../assets/users/boy.svg" alt="user-icon">
+                </div>
+                <div class="base-type type-2 col-sm-4 d-flex justify-content-center">
+                  <img class="user-icon" src="../../../assets/users/girl.svg" alt="user-icon">
+                </div>
+                <div class="base-type type-3 col-sm-4 d-flex justify-content-center">
+                  <img class="user-icon" src="../../../assets/users/girl.svg" alt="user-icon">
+                </div>
+                <div class="base-type type-4 col-sm-4 d-flex justify-content-center">
+                  <img class="user-icon" src="../../../assets/users/girl.svg" alt="user-icon">
+                </div>
+                <div class="base-type type-5 col-sm-4 d-flex justify-content-center">
+                  <img class="user-icon" src="../../../assets/users/boy.svg" alt="user-icon">
+                </div>
+                <div class="base-type type-6 col-sm-4 d-flex justify-content-center">
+                  <img class="user-icon" src="../../../assets/users/boy.svg" alt="user-icon">
+                </div>
+                <div class="base-type type-7 col-sm-4 d-flex justify-content-center">
+                  <img class="user-icon" src="../../../assets/users/girl.svg" alt="user-icon">
+                </div>
+                <div class="base-type type-8 col-sm-4 d-flex justify-content-center">
+                  <img class="user-icon" src="../../../assets/users/boy.svg" alt="user-icon">
+                </div>
+                <div class="base-type type-9 col-sm-4 d-flex justify-content-center">
+                  <img class="user-icon" src="../../../assets/users/girl.svg" alt="user-icon">
+                </div>
+                <div class="base-type type-10 col-sm-4 d-flex justify-content-center">
+                  <img class="user-icon" src="../../../assets/users/boy.svg" alt="user-icon">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="staff col-lg-2">
+            <h5>Staff: </h5>
+            <div class="staff-list">
+              <div class="container users-list">
+                <div class="row">
+                  <div class="base-type type-A col-sm-4 d-flex justify-content-center">
+                    <img class="user-icon" src="../../../assets/users/woman.svg" alt="user-icon">
+                  </div>
+                  <div class="base-type type-B col-sm-4 d-flex justify-content-center">
+                    <img class="user-icon" src="../../../assets/users/man.svg" alt="user-icon">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rules col-lg-2">
+            <h5>Rules: </h5>
+            <div class="rules-list">
+                <mdb-checkbox [disabled]="true" [checked]="true" [default]="true">Let changes</mdb-checkbox>
+                <mdb-checkbox [disabled]="true" [checked]="true" [default]="true">Hold item</mdb-checkbox>
+                <mdb-checkbox [disabled]="true" [checked]="true" [default]="true">Only luma</mdb-checkbox>
+                <mdb-checkbox [disabled]="true" [checked]="true" [default]="true">Combat items</mdb-checkbox>
+            </div>
+          </div>
+          <div class="info col-lg-5">
+            <h5>Description: </h5>
+            <div class="tournament-desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel risus pretium, ullamcorper tortor pellentesque, rutrum libero. Cras sed arcu tellus. Suspendisse lacinia vel massa quis tempor.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
