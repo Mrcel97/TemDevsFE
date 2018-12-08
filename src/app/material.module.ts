@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MatTabsModule, MatSliderModule, MatSlideToggleModule, MatGridListModule } from '@angular/material';
+import { MatTabsModule, MatSliderModule, MatSlideToggleModule, MatGridListModule, MatAutocompleteModule, MatFormFieldModule, MatOptionModule, MatInputModule } from '@angular/material';
 
 const MATERIAL_MODULES = [
   CommonModule,
@@ -8,6 +8,10 @@ const MATERIAL_MODULES = [
   MatSliderModule,
   MatSlideToggleModule,
   MatGridListModule,
+  MatAutocompleteModule,
+  MatFormFieldModule,
+  MatOptionModule,
+  MatInputModule
 ];
 
 @NgModule({

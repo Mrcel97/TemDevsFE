@@ -17,21 +17,25 @@
 
   .card-content {
     .form-control, input, .md-form > label {
-      color: $primary-color !important;
+      color: none !important;
     }
 
     .md-form input[type=text]:focus:not([readonly]) + label {
       color: $primary-color;
-      border-bottom: $primary-color !important;
+      border-bottom: none !important;
     }
 
     input[type=text]:focus:not([readonly]) {
-      border-bottom: 1px solid $primary-color !important;
-      box-shadow: 0 1px 0 0 $primary-color !important;
+      border-bottom: none !important;
+      box-shadow: none !important;
     }
 
     input {
       border-color: $primary-color !important;
+    }
+
+    .username-input {
+      width: 100%;
     }
 
     button {
@@ -55,4 +59,35 @@
     display: block;
     margin: auto;
   }
+}
+
+mat-option {
+  height: 4.5em;
+
+  background-color: lighten($primary-color, 10%);
+
+  p {
+    padding: 0;
+    margin: 0;
+    color: $accent-color;
+  }
+}
+
+mat-option:hover {
+  background-color: lighten($primary-color, 5%) !important;
+}
+
+.img-option {
+  width: 4em;
+  height: 4em;
+  display: block;
+  margin: auto;
+}
+
+.temtem-select {
+  width: 100%;
+}
+
+.gender-selector-container {
+  margin: auto;
 }

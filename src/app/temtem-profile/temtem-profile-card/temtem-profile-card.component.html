@@ -8,13 +8,41 @@
           <img class="rounded-circle temtem-avatar" src="/assets/images/127.png">
         </div>
         <div class="col-8">
-          <div class="md-form mt-5">
-            <input type="text" id="username" class="form-control" mdbInputDirective>
-            <label for="username">Temtem username</label>
-          </div>
+          <mat-form-field class="username-input">
+            <input type="text" placeholder="Temtem Username" id="username" matInput>
+          </mat-form-field>
+        </div>
+        <!-- End avatar and username -->
+
+        <!-- Favourite temtem select -->
+        <div class="col-4 mt-4">
+          <img *ngIf="!profile.favTemtem" class="rounded-circle temtem-avatar" src="/assets/logo.png">
+          <img *ngIf="profile.favTemtem" class="rounded-circle temtem-avatar" src="/assets/{{ profile.favTemtem?.image_url }}">
+        </div>
+        <div class="col-8 mt-4">
+          <mat-form-field class="temtem-select">
+            <input type="text" placeholder="Favourite temtem" aria-label="Number" matInput [formControl]="temtemSelectControl" [matAutocomplete]="auto">
+            <mat-autocomplete #auto="matAutocomplete" (optionSelected)="favTemtemChange($event)" [displayWith]="getTemtemName">
+              <mat-option #favTemtem *ngFor="let option of filteredOptions | async" [value]="option">
+                <div class="row align-items-center">
+                  <div class="col-3">
+                    <img class="img-option" src="/assets/{{ option.image_url }}" alt="{{ option.name }} image">
+                  </div>
+                  <div class="col-9">
+                    <p class="name">{{ option.id }} - {{ option.name }}</p>
+                  </div>
+                </div>
+              </mat-option>
+            </mat-autocomplete>
+          </mat-form-field>
         </div>
       </div>
-      <app-gender-selector (gender)="genderChange($event)"></app-gender-selector>
+      <!-- End favourite temtem select -->
+
+      <div class="gender-selector-container mt-4">
+        <app-gender-selector (gender)="genderChange($event)"></app-gender-selector>
+      </div>
+
       <button type="button" class="pull-right btn">Save</button>
     </div>
 
