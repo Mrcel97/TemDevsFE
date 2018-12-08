@@ -27,6 +27,7 @@ import { MaterialModule } from './material.module';
 import { DiscordProfileCardComponent } from './temtem-profile/discord-profile-card/discord-profile-card.component';
 import { TemtemProfileCardComponent } from './temtem-profile/temtem-profile-card/temtem-profile-card.component';
 import { SharedModule } from './shared/shared.module';
+import { TournamentListComponent } from './tournament/tournament-list/tournament-list.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { SharedModule } from './shared/shared.module';
     TournamentTeamFormComponent,
     DiscordProfileCardComponent,
     TemtemProfileCardComponent,
+    TournamentListComponent,
     ],
   imports: [
     BrowserModule,

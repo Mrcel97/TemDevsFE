@@ -125,3 +125,13 @@ input[type=text]:focus:not([readonly]) {
 .md-form {
   margin-top: 0;
 }
+
+// Checkbox
+
+.custom-checkbox .custom-control-input:disabled:checked ~ .custom-control-label::before {
+  background-color: $primary-color !important;
+}
+
+.custom-control-input:disabled ~ .custom-control-label {
+  color: $primary-color;
+}

@@ -10,6 +10,7 @@ import { TempediaComponent } from './tempedia/tempedia.component';
 import { TemtemProfileComponent } from './temtem-profile/temtem-profile.component';
 import { TournamentComponent } from './tournament/tournament.component';
 import { TournamentFormComponent } from './tournament/tournament-form/tournament-form.component';
+import { TournamentListComponent } from './tournament/tournament-list/tournament-list.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path: 'temtem-profile', component: TemtemProfileComponent , canActivate: [AuthGuard]},
   {path: 'tournaments', component: TournamentComponent},
   {path: 'tournaments/form', component: TournamentFormComponent},
+  {path: 'tournaments/list', component: TournamentListComponent},
 ];
 
 @NgModule({
