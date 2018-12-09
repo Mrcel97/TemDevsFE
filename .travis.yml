@@ -19,7 +19,7 @@ script:
 
 after_success:
   - if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ]; then
-    - firebase deploy --token $FIREBASE_TOKEN
+    firebase deploy --token $FIREBASE_TOKEN
   fi
   
 notifications:
