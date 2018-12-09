@@ -17,10 +17,10 @@ before_script:
 script:
   - ng build --prod
   
-deploy:
-  provider: firebase
-  token:
-    secure: $FIREBASE_TOKEN
+after_success:
+  - if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ]; then
+    firebase deploy --token $FIREBASE_TOKEN
+  fi
     
 notifications:
   email:
