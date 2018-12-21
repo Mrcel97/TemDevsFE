@@ -170,11 +170,15 @@
   color: $accent-color-variant;
 }
 
+.spaced {
+  color: $accent-color-variant;
+}
+
 // Prize Pool
 
 .prize-pool-help {
   font-size: .85rem;
-  margin-bottom: 0;
+  margin-bottom: 0.75em;
   color: $accent-color-variant;
 }
 
@@ -185,12 +189,6 @@
   top: 7.2em;
   left: 4.6em;
 }
-
-.spaced {
-  margin: auto .75em 1em auto;
-  font-size: 1px;
-}
-
 
 // Inputs
 
