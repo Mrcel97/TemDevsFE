@@ -67,6 +67,7 @@ export class TournamentFormComponent implements OnInit {
   submitForm() {
     if(this.validFormData()) {
       this.tournament = this.generateTournament();
+      this.router.navigateByUrl('/tournaments/list')
     };
   }
 
