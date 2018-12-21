@@ -4,6 +4,7 @@ import { MatTabChangeEvent } from '@angular/material';
 
 import { TournamentService } from './../../services/tournament.service';
 import { Router } from '@angular/router';
+import { Tournament, Prize, Rule } from '../tournament';
 
 @Component({
   selector: 'app-tournament-form',
@@ -20,12 +21,13 @@ export class TournamentFormComponent implements OnInit {
   selected = new FormControl(0);
 
   // Form values:
+  tournament: Tournament;
   tournamentOwner = '';
   tournamentDate: Date;
   tournamentName = '';
   tournamentTeamSize = 1;
   tournamentPrize: boolean = false
-  tournamentPrizeName = '';
+  tournamentPrizeDesc = '';
   tournamentDesc = '';
   tournamentRules: { [id: string]: boolean; } = {};
 
@@ -63,17 +65,41 @@ export class TournamentFormComponent implements OnInit {
   }
 
   submitForm() {
-    console.log(
-      '\nTournament From Data: ' + '\n' +
-      'Owner: '             + this.tournamentOwner      + '\n' +
-      'Date: '              + this.tournamentDate       + '\n' +
-      'Name: '              + this.tournamentName       + '\n' +
-      'Team size: '         + this.tournamentTeamSize   + '\n' +
-      'Prize: '             + this.tournamentPrize      + '\n' +
-      'Prize name: '        + this.tournamentPrizeName  + '\n' +
-      'Tournament desc:'    + this.tournamentDesc       + '\n' +
-      'Tournament rules: ', this.tournamentRules
-    );
+    if(this.validFormData()) {
+      this.tournament = this.generateTournament();
+    };
   }
 
+  validFormData(): boolean {
+    if(this.tournamentOwner != null && this.tournamentName != '' && this.tournamentDesc != '') {
+      if (this.tournamentPrize && this.tournamentPrizeDesc == '') {
+        console.error('Prize selected but not specified!')
+        return false;
+      } else if (!this.tournamentPrize && this.tournamentPrizeDesc != '') {
+        console.error('Prize specified but not activated!')
+        return false;
+      }
+      return true;
+    }
+    console.error('Invalid general data to build a Tournament Object!')
+    return false;
+  }
+
+  private generateTournament(): Tournament {
+    const prize = new Prize(this.tournamentPrizeDesc, this.tournamentPrize);
+    const rules = []
+
+    for (let key in this.tournamentRules) {
+      rules.push(new Rule(key, this.tournamentRules[key]));
+    }
+
+    return new Tournament(
+      this.tournamentName, 
+      this.tournamentDesc, 
+      this.tournamentOwner, 
+      this.tournamentDate,
+      prize,
+      rules
+    );
+  }
 }

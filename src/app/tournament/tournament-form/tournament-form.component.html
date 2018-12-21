@@ -61,11 +61,11 @@
                           <p class="prize-pool-help">Prize Pool</p>
                           <mat-slide-toggle [(ngModel)]="tournamentPrize" class="toggler"></mat-slide-toggle>
                         </div>
-                        <input [(ngModel)]="tournamentPrizeName" type="text" id="form2" class="form-control">
+                        <input [(ngModel)]="tournamentPrizeDesc" type="text" id="form2" class="form-control">
                         <label for="form2" class=""></label>
                       </div>
                     </div>
-                </div><!-- torunament form left -->
+                </div>
                 <div class="torunament-form-right col-sm-6">
                   <div class="md-form">
                     <textarea [(ngModel)]="tournamentDesc" class="md-textarea form-control " rows="3" id="input_text" type="text" length="120" mdbCharCounter mdbInputDirective></textarea>
@@ -76,14 +76,14 @@
                 <p class="prize-pool-help">Tournament Rules</p>
                 <div class="container">
                   <div class="row">
-                      <mat-slide-toggle [(ngModel)]="tournamentRules['changes']" class="col-sm-3 spaced">Let Changes</mat-slide-toggle>
-                      <mat-slide-toggle [(ngModel)]="tournamentRules['holdItems']" class="col-sm-3 spaced">Hold Items</mat-slide-toggle>
-                      <mat-slide-toggle [(ngModel)]="tournamentRules['legendary']" class="col-sm-3 spaced">Legendary Temtems</mat-slide-toggle>
+                      <mat-slide-toggle [(ngModel)]="tournamentRules['Let Changes']" class="col-sm-3 spaced">Let Changes</mat-slide-toggle>
+                      <mat-slide-toggle [(ngModel)]="tournamentRules['Hold Items']" class="col-sm-3 spaced">Hold Items</mat-slide-toggle>
+                      <mat-slide-toggle [(ngModel)]="tournamentRules['Legendary Temtems']" class="col-sm-3 spaced">Legendary Temtems</mat-slide-toggle>
                   </div>
                   <div style="margin-top: 1em;" class="row">
-                      <mat-slide-toggle [(ngModel)]="tournamentRules['luma']" class="col-sm-3 spaced">Only Luma</mat-slide-toggle>
-                      <mat-slide-toggle [(ngModel)]="tournamentRules['combatItems']" class="col-sm-3 spaced">Combat Items</mat-slide-toggle>
-                      <mat-slide-toggle [(ngModel)]="tournamentRules['visible']" class="col-sm-3 spaced">Visible</mat-slide-toggle>
+                      <mat-slide-toggle [(ngModel)]="tournamentRules['Only Luma']" class="col-sm-3 spaced">Only Luma</mat-slide-toggle>
+                      <mat-slide-toggle [(ngModel)]="tournamentRules['Combat Items']" class="col-sm-3 spaced">Combat Items</mat-slide-toggle>
+                      <mat-slide-toggle [(ngModel)]="tournamentRules['Visible']" class="col-sm-3 spaced">Visible</mat-slide-toggle>
                   </div>
                 </div>
               </div>
