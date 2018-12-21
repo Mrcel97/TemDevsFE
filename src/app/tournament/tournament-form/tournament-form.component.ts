@@ -19,6 +19,15 @@ export class TournamentFormComponent implements OnInit {
   tabs = ['Setup'];
   selected = new FormControl(0);
 
+  // Form values:
+  tournamentOwner = '';
+  tournamentDate: Date;
+  tournamentName = '';
+  tournamentTeamSize = 1;
+  tournamentPrize: boolean = false
+  tournamentPrizeName = '';
+  tournamentDesc = '';
+  tournamentRules: { [id: string]: boolean; } = {};
 
   constructor( 
       public router: Router,
@@ -26,8 +35,9 @@ export class TournamentFormComponent implements OnInit {
     ) { }
 
   ngOnInit() {
+    this.tournamentOwner = 'Admin' // session.name
+    this.tournamentDate = new Date();
   }
-
 
   addTab(selectAfterAdding: boolean) {
     this.teams = this.teams+=1;
@@ -50,6 +60,20 @@ export class TournamentFormComponent implements OnInit {
 
   formatLabel(value: number | null) {
     return value;
+  }
+
+  submitForm() {
+    console.log(
+      '\nTournament From Data: ' + '\n' +
+      'Owner: '             + this.tournamentOwner      + '\n' +
+      'Date: '              + this.tournamentDate       + '\n' +
+      'Name: '              + this.tournamentName       + '\n' +
+      'Team size: '         + this.tournamentTeamSize   + '\n' +
+      'Prize: '             + this.tournamentPrize      + '\n' +
+      'Prize name: '        + this.tournamentPrizeName  + '\n' +
+      'Tournament desc:'    + this.tournamentDesc       + '\n' +
+      'Tournament rules: ', this.tournamentRules
+    );
   }
 
 }
